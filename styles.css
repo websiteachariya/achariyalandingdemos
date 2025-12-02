@@ -153,6 +153,19 @@ body{
   }
 }
 
+.contactlink {
+    padding: 5px 8px;     /* increases hover area */
+    display: inline-block;
+    border-radius: 4px;   /* optional */
+    text-decoration: none;
+}
+
+.contactlink:hover {
+    text-decoration: underline ;
+    text-decoration-color: #fff;
+    text-underline-offset: 8px;
+}
+
 /* ----------------------------
    HERO IMAGE
 ----------------------------- */
