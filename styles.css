@@ -127,7 +127,7 @@ body{
 
 
 .top-announcement {
-  background: #FFFC01; /* bright yellow */
+  background: #FFD200; /* bright yellow */
   color: #000;         /* black text */
   font-weight: 700;    /* bold */
   text-align: center;
@@ -266,6 +266,28 @@ body{
   }
 }
 
+/* NORMAL DESKTOP SIZE */
+.board-select,
+.grade-select {
+  font-size: 16px;
+  padding: 10px 12px;
+}
+
+/* MOBILE FIX — 480px & below */
+@media (max-width: 480px) {
+
+  .board-select,
+  .grade-select {
+    width: 100% !important;     /* full width on mobile */
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  /* Change column layout to stacked on mobile */
+  .row.g-2 .col-6 {
+    width: 100% !important;
+  }
+}
 
 /* ----------------------------
    RIBBONS

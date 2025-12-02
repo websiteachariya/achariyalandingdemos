@@ -36,19 +36,29 @@
 
       <div class="me-4 d-flex align-items-center">
         <i class="fa-solid fa-envelope"></i>
-        <span class="ms-2">info@example.com</span>
+        <span class="ms-2">hellow@achariya.org</span>
       </div>
 
       <div class="me-4 d-flex align-items-center">
         <i class="fa-solid fa-phone"></i>
-        <span class="ms-2">+91 98765 43210</span>
+        <span class="ms-2">+91 6232 39 6232</span>
       </div>
 
-      <div class="social-icons d-flex align-items-center">
-        <i class="fa-brands fa-facebook ms-3"></i>
-        <i class="fa-brands fa-instagram ms-3"></i>
-        <i class="fa-brands fa-youtube ms-3"></i>
-      </div>
+<div class="social-icons d-flex align-items-center">
+
+  <a href="https://www.facebook.com/AchariyaABSMCBSEChennai/" class="social-link ms-3" target="_blank">
+    <i class="fa-brands fa-facebook"></i>
+  </a>
+
+  <a href="https://whatsapp.com/channel/0029Vb7GhxjEQIateLMy2Q1z" class="social-link ms-3" target="_blank">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+
+  <a href="https://www.youtube.com/channel/UCcbfIHafvJuRnxb567Jc6_A" class="social-link ms-3" target="_blank">
+    <i class="fa-brands fa-youtube"></i>
+  </a>
+
+</div>
 
     </div>
 
@@ -104,27 +114,27 @@
           <option>2026 - 2027</option>
         </select>
 
-        <div class="row g-2 mb-3">
-          <div class="col-6">
-            <select class="form-select mb-3">
-              <option selected disabled>Select Board *</option>
-              <option>Montessori Early Childhood Program</option>
-              <option>State Board</option>
-              <option>ICSE</option>
-              <option>IGCSE</option>
-              <option>Matriculation</option>
-            </select>
-          </div>
+<div class="row g-2 mb-3">
+  <div class="col-6">
+    <select class="form-select board-select">
+      <option selected disabled>Select Board *</option>
+      <option>Montessori Early Childhood Program</option>
+      <!-- <option>State Board</option>
+      <option>ICSE</option>
+      <option>IGCSE</option>
+      <option>Matriculation</option> -->
+    </select>
+  </div>
 
-          <div class="col-6">
-            <select class="form-select mb-3">
-              <option selected disabled>Select Class / Grade *</option>
-              <option>Toddler (1.5–2.5 years)</option>
-              <option>Montessori 1 (Age 2.5–3.5)</option>
-              <option>Montessori 2 (Age 3.5–4.5)</option>
-            </select>
-          </div>
-        </div>
+  <div class="col-6">
+    <select class="form-select grade-select">
+      <option selected disabled>Select Class / Grade *</option>
+      <option>Toddler (1.5–2.5 years)</option>
+      <option>Montessori 1 (Age 2.5–3.5)</option>
+      <option>Montessori 2 (Age 3.5–4.5)</option>
+    </select>
+  </div>
+</div>
 
       </form>
 
@@ -398,6 +408,9 @@ const observer = new IntersectionObserver((entries) => {
 },{threshold:0.2});
 elements.forEach(el=>observer.observe(el));
 </script>
+
+
+
 <script>
 const counters = document.querySelectorAll(".count-num");
 let counted = false;
