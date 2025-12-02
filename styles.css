@@ -101,6 +101,32 @@ body{
   background-color: #ffffff;
 }
 
+
+.top-announcement {
+  background: #FFD600; /* bright yellow */
+  color: #000;         /* black text */
+  font-weight: 700;    /* bold */
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .top-announcement {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-announcement {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}
+
 /* ----------------------------
    HERO IMAGE
 ----------------------------- */
