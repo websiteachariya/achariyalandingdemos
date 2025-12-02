@@ -199,7 +199,6 @@ body{
   flex-grow: 1;
 }
 
-.form-control,
 .form-select {
   font-size: 16px;
   padding: 10px 12px;
@@ -244,6 +243,28 @@ body{
   }
 }
 
+/* NORMAL SIZE (desktop + tablet) */
+.country-code {
+  max-width: 110px;
+}
+
+/* MOBILE FIX — 320px */
+@media (max-width: 480px) {
+  .country-code {
+    max-width: 70px !important;   /* smaller on mobile */
+    padding: 6px 4px;             /* reduce height slightly */
+    font-size: 14px;
+  }
+
+  .mobile-input {
+    padding: 8px 10px;            /* comfortable input */
+    font-size: 15px;
+  }
+
+  .d-flex.gap-2 {
+    gap: 8px !important;          /* reduce gap spacing */
+  }
+}
 
 
 /* ----------------------------
@@ -900,6 +921,4 @@ body{
 .social-icons a:hover {
   transform: translateY(-3px);
   opacity: 0.8;
-} */
-
-/* FIXED BOTTOM BAR – ALWAYS LAST */
+/* }  */
