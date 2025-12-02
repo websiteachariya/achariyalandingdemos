@@ -2,7 +2,6 @@
 .top-header {
   background: #A80101;
   padding: 12px 0;
-  border-bottom: 1px solid #ddd;
   width: 100%;
   position: relative;
   z-index: 999;
@@ -14,73 +13,96 @@
 
 /* Right side contact info */
 .header-right {
-  gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
   font-size: 17px;
   color: white;
 }
 
 .header-right i {
-  color: #fdf7fa;
-  font-size: 18px;
+  color: #fff;
+  font-size: 20px;
 }
 
 /* Social Icons */
 .social-icons i {
   font-size: 22px;
-  color: #fefbfd !important;
-  opacity: 1 !important;
-  display: inline-block;
+  color: #fff !important;
   transition: 0.3s ease;
 }
 
 .social-icons i:hover {
-  color: #9c0d4a;
+  color: #ffcbcc;
   transform: translateY(-3px) scale(1.15);
 }
 
-/* ----------------------------
-   RESPONSIVE HEADER
------------------------------ */
+/* ----------------------------------------------------
+   RESPONSIVE FIXES — CLEANEST VERSION
+------------------------------------------------------ */
+
+/* TABLET SIZE */
 @media (max-width: 992px) {
   .header-right {
     gap: 15px;
+    font-size: 15px;
   }
   .logo {
     height: 70px;
   }
+  .header-right i {
+    font-size: 18px;
+  }
+  .social-icons i {
+    font-size: 20px;
+  }
 }
 
+/* MOBILE FIX — THE IMPORTANT PART */
 @media (max-width: 768px) {
-  .top-header .header-container {
+  .top-header .container {
     flex-direction: column;
     text-align: center;
-    gap: 10px;
+    gap: 12px;
   }
 
   .header-right {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 12px;
+    font-size: 14px;
   }
 
-  .contact-item {
-    justify-content: center;
+  .header-right i {
+    font-size: 16px; /* REDUCED ICON SIZE */
   }
 
   .social-icons i {
-    margin-top: 5px;
+    font-size: 18px; /* SMALLER AND EQUAL */
+  }
+
+  .logo {
+    height: 65px;
   }
 }
 
+/* SMALL MOBILE */
 @media (max-width: 480px) {
   .logo {
-    height: 60px;
+    height: 55px;
   }
+
   .header-right {
-    font-size: 13px;
+    font-size: 12px;
+    gap: 8px;
   }
+
+  .header-right i {
+    font-size: 14px; /* EVEN SMALLER */
+  }
+
   .social-icons i {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -103,7 +125,7 @@ body{
 
 
 .top-announcement {
-  background: #FFD600; /* bright yellow */
+  background: #FFFC01; /* bright yellow */
   color: #000;         /* black text */
   font-weight: 700;    /* bold */
   text-align: center;
@@ -130,50 +152,112 @@ body{
 /* ----------------------------
    HERO IMAGE
 ----------------------------- */
+/* IMAGE */
 .hero-img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 15px;
 }
 
-/* ----------------------------
-   FORM CARD HEIGHT MATCH IMAGE
------------------------------ */
+/* -----------------------------------
+   FORM CARD - DESKTOP
+------------------------------------ */
 .form-card {
   background: #ffffff;
   border-radius: 15px;
-  overflow: hidden; /* Needed for perfect rounded corners */
+  overflow: hidden;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
-/* RED HEADER */
+/* HEADER */
 .form-header {
   background: #A80101;
   color: #ffffff;
-  padding: 15px 20px;
+  padding: 15px 18px;
   font-size: 20px;
   font-weight: 600;
 }
 
-/* WHITE BODY */
+/* BODY */
 .form-body {
   padding: 20px;
   background: #fff;
   flex-grow: 1;
 }
 
-/* BOTTOM BUTTON */
+.form-control,
+.form-select {
+  font-size: 16px;
+  padding: 10px 12px;
+}
+
+/* BUTTON */
 .register-btn {
   background: #A80101 !important;
   border-radius: 0;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* -----------------------------------
+   RESPONSIVE FIXES
+------------------------------------ */
+
+/* TABLETS */
+@media (max-width: 992px) {
+  .form-header {
+    font-size: 18px;
+    padding: 12px 15px;
+  }
   .form-body {
     padding: 15px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .row.align-items-stretch {
+    flex-direction: column;
+  }
+  .hero-img {
+    height: auto;
+  }
+}
+
+/* SMALL MOBILE — 320px */
+@media (max-width: 480px) {
+
+  .form-card {
+    border-radius: 10px;
+  }
+
+  .form-header {
+    font-size: 16px;
+    padding: 10px 12px;
+  }
+
+  .form-body {
+    padding: 12px;
+  }
+
+  .form-control,
+  .form-select {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .register-btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  /* Fix 320px two-column selects breaking */
+  .row.g-2 .col-6 {
+    width: 100%; /* stack vertically on small screens */
   }
 }
 
@@ -926,6 +1010,7 @@ body{
   margin-top: 40px;
   width: 100%;
   display: block;
+  color: white;
 }
   
 /* RESPONSIVE */

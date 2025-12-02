@@ -61,7 +61,7 @@
   Adyar’s Most Trusted CBSE School for Classes 1 to 5
 </div>
 
-<!-- ===========================
+<!-- ===========================  #popinans
      FIRST SECTION (HERO + FORM)
 =========================== -->
 <section class="container py-5">
@@ -70,7 +70,7 @@
 
     <!-- LEFT IMAGE -->
     <div class="col-lg-7 reveal d-flex">
-      <img src="images/new_banner.jpg" class="hero-img flex-grow-1" alt="">
+      <img src="images/Web Poster_1.jpg" class="hero-img flex-grow-1" alt="">
     </div>
 
     <!-- RIGHT FORM -->
@@ -100,7 +100,6 @@
 
         <select class="form-select mb-3">
           <option selected disabled>Select Academic Year </option>
-          <option>2025 - 2026</option>
           <option>2026 - 2027</option>
         </select>
 
@@ -152,6 +151,16 @@
 
   </div>
 </section>
+<!-- Success Popup -->
+<div class="modal fade" id="successModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center p-4">
+      <h4 class="text-success mb-2">Form Submitted</h4>
+      <p>Your admission form has been submitted successfully.</p>
+      <button class="btn btn-primary mt-2" data-bs-dismiss="modal">OK</button>
+    </div>
+  </div>
+</div>
 
 
 <section class="container my-5 stats-section">
@@ -386,12 +395,11 @@
 
   </div>
 
-  <!-- BOTTOM BAR -->
-  <!-- <div class="footer-bottom">
-    © 2025 Achariya School. All Rights Reserved.
-  </div> -->
 
-<!-- </footer> --> 
+ </footer> --> 
+  <div class="footer-bottom">
+    © 2025 Achariya School. All Rights Reserved.
+  </div>
 
 <script>
 // scroll reveal
@@ -440,6 +448,37 @@ function runCounter() {
 }
 
 window.addEventListener("scroll", runCounter);
+</script>
+
+
+<script>
+document.getElementById("submitBtn").addEventListener("click", function () {
+
+    // Get all form fields
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let mobile = document.getElementById("mobile").value.trim();
+    let academicYear = document.getElementById("academicYear").value;
+    let board = document.getElementById("board").value;
+    let grade = document.getElementById("grade").value;
+
+    // Validation
+    if (name === "" ||
+        email === "" ||
+        mobile === "" ||
+        academicYear === "Select Academic Year" ||
+        board === "Select Board *" ||
+        grade === "Select Class / Grade *") 
+    {
+        alert("Please fill out all required fields.");
+        return;
+    }
+
+    // If all fields are filled → Show Popup
+    let popup = new bootstrap.Modal(document.getElementById('successModal'));
+    popup.show();
+
+});
 </script>
 
 </body>
