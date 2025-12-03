@@ -129,17 +129,23 @@
     text-align: center !important;
   }
 
+  .social-icons {
+    display: flex;
+    justify-content: center !important;
+    gap: 12px !important;
+    width: 100%;
+  }
+
+  .logo {
+    height: 50px !important;
+  }
+}
 /* Move social icons slightly left on 320px */
 @media (max-width: 320px) {
   .social-icons {
     justify-content: flex-start !important;  /* move left */
     width: 100%;
-    padding-left: 8px; /* adjust left spacing */
-  }
-}
-
-  .logo {
-    height: 50px !important;
+    padding-left: 20px; /* adjust left spacing */
   }
 }
 
