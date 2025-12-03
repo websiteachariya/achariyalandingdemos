@@ -107,6 +107,7 @@
     font-size: 16px;
   }
 }
+
 /* ULTRA SMALL MOBILE — 320px FIX */
 @media (max-width: 320px) {
 
@@ -148,7 +149,6 @@
     padding-left: 20px; /* adjust left spacing */
   }
 }
-
 /* ----------------------------
    ROOT COLORS
 ----------------------------- */
@@ -162,7 +162,7 @@
 }
 
 body{
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #ffffff;
 }
 
