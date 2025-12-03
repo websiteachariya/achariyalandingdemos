@@ -1,154 +1,175 @@
-/* MAIN HEADER BAR */
+/* ==============================
+   MAIN HEADER BAR
+============================== */
 .top-header {
   background: #A80101;
   padding: 12px 0;
   width: 100%;
-  position: relative;
-  z-index: 999;
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+}
 
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
 }
 
 .logo {
-  height: 90px;
+  height: 85px;
 }
 
-/* Right side contact info */
+/* RIGHT SIDE */
 .header-right {
   display: flex;
   align-items: center;
   gap: 25px;
-  font-size: 17px;
-  color: white;
+  color: #fff;
 }
 
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contactlink {
+  color: #fff !important;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons i,
 .header-right i {
   color: #fff;
   font-size: 20px;
 }
 
-/* Social Icons */
-.social-icons i {
-  font-size: 22px;
-  color: #fff !important;
-  transition: 0.3s ease;
-}
 
-.social-icons i:hover {
-  color: #ffcbcc;
-  transform: translateY(-3px) scale(1.15);
-}
-
-/* ----------------------------------------------------
-   RESPONSIVE FIXES — CLEANEST VERSION
------------------------------------------------------- */
-
-/* TABLET SIZE */
-@media (max-width: 992px) {
-  .header-right {
-    gap: 15px;
-    font-size: 15px;
-  }
-  .logo {
-    height: 70px;
-  }
-  .header-right i {
-    font-size: 18px;
-  }
-  .social-icons i {
-    font-size: 20px;
-  }
-}
-
-/* MOBILE FIX — THE IMPORTANT PART */
+/* ==============================
+   TABLET (≤ 768px)
+============================== */
 @media (max-width: 768px) {
-  .top-header .container {
-    flex-direction: column;
-    text-align: center;
-    gap: 12px;
-  }
-
-  .header-right {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-    font-size: 14px;
-  }
-
-  .header-right i {
-    font-size: 16px; /* REDUCED ICON SIZE */
-  }
-
-  .social-icons i {
-    font-size: 18px; /* SMALLER AND EQUAL */
-  }
-
-  .logo {
-    height: 65px;
-  }
+  .logo { height: 70px; }
+  .header-right { gap: 18px; }
+  .contactlink { font-size: 14px; }
+  .social-icons i { font-size: 18px; }
 }
 
-/* SMALL MOBILE */
-@media (max-width: 480px) {
-  .logo {
-    height: 55px;
-  }
 
-  .header-right {
-    font-size: 12px;
-    gap: 8px;
-  }
+/* ==============================
+   MOBILE (≤ 450px)
+   Logo left + content right (vertical)
+============================== */
+@media (max-width: 450px) {
 
-  .header-right i {
-    font-size: 14px; /* EVEN SMALLER */
-  }
-
-  .social-icons i {
-    font-size: 16px;
-  }
-}
-
-/* ULTRA SMALL MOBILE — 320px FIX */
-@media (max-width: 320px) {
-
-  .top-header .container {
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 10px !important;
-    text-align: center !important;
-  }
-
-  .header-right {
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 6px !important;
-    font-size: 12px !important;
-  }
-
-  .header-right div {
-    width: 100%;
-    text-align: center !important;
-  }
-
-  .social-icons {
+  .header-container {
     display: flex;
-    justify-content: center !important;
-    /* gap: 12px !important; */
-     width: 100%; 
-  } 
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
 
+  /* Logo */
   .logo {
-    height: 50px !important;
+    height: 80px;
+    margin-left: 5px;
   }
-}
-/* Move social icons slightly left on 320px */
-@media (max-width: 320px) {
+
+  /* Right side becomes vertical */
+  .header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+
+  .contact-item {
+    justify-content: start;
+  }
+
   .social-icons {
-    justify-content: flex-start !important;  /* move left */
+    justify-content: flex-start;
+    gap: 10px;
     width: 100%;
-    padding-left: 20px; /* adjust left spacing */
   }
 }
+
+
+/* ==============================
+   SMALL MOBILE (≤ 375px)
+============================== */
+@media (max-width: 375px) {
+  .contactlink { font-size: 12px; }
+  .header-right { gap: 8px; }
+  .social-icons i { font-size: 17px; }
+}
+
+
+/* ==============================
+   ULTRA SMALL (≤ 320px)
+============================== */
+@media (max-width: 320px) {
+  .logo { height: 62px; }
+  .contactlink { font-size: 11px; }
+  .header-right { gap: 6px; }
+  .social-icons { padding-right: 4.5px; }
+}
+
+
+/* ======================================
+   FIX OVERLAP (750px down to 470px)
+   Logo left + items vertical right
+====================================== */
+@media (max-width: 768px) and (min-width: 452px) {
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 25px;
+  }
+
+  /* Reduce logo so it fits */
+  .logo {
+    height: 75px !important;
+  }
+
+  /* STACK RIGHT SIDE VERTICALLY */
+  .header-right {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+    gap: 10px !important;
+  }
+
+  /* Each contact item goes RIGHT */
+  .contact-item {
+    justify-content: flex-start !important;
+    width: 100%;
+  }
+
+  .contactlink {
+    font-size: 14px !important;
+  }
+
+  /* Social icons right */
+  .social-icons {
+    justify-content: flex-start !important;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .social-icons i {
+    font-size: 18px !important;
+  }
+}
+
 /* ----------------------------
    ROOT COLORS
 ----------------------------- */
@@ -191,6 +212,44 @@ body{
   .top-announcement {
     font-size: 14px;
     padding: 6px 10px;
+  }
+}
+@media (max-width: 425px) {
+  .top-announcement {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+}
+
+/* 390px */
+@media (max-width: 390px) {
+  .top-announcement {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+}
+
+/* 375px */
+@media (max-width: 375px) {
+  .top-announcement {
+    font-size: 11.5px;
+    padding: 5px 8px;
+  }
+}
+
+/* 360px */
+@media (max-width: 360px) {
+  .top-announcement {
+    font-size: 11px;
+    padding: 4px 7px;
+  }
+}
+
+/* 320px */
+@media (max-width: 320px) {
+  .top-announcement {
+    font-size: 10px;
+    padding: 4px 6px;
   }
 }
 
