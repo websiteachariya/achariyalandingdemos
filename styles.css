@@ -107,6 +107,41 @@
     font-size: 16px;
   }
 }
+/* ULTRA SMALL MOBILE — 320px FIX */
+@media (max-width: 320px) {
+
+  .top-header .container {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 10px !important;
+    text-align: center !important;
+  }
+
+  .header-right {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 6px !important;
+    font-size: 12px !important;
+  }
+
+  .header-right div {
+    width: 100%;
+    text-align: center !important;
+  }
+
+/* Move social icons slightly left on 320px */
+@media (max-width: 320px) {
+  .social-icons {
+    justify-content: flex-start !important;  /* move left */
+    width: 100%;
+    padding-left: 8px; /* adjust left spacing */
+  }
+}
+
+  .logo {
+    height: 50px !important;
+  }
+}
 
 /* ----------------------------
    ROOT COLORS
