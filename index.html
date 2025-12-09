@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,266 +8,203 @@
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 
-<!-- External CSS -->
+  <!-- External CSS -->
   <link rel="stylesheet" href="styles.css">
 
 </head>
+
 <body>
-<!-- ===========================
+  <!-- ===========================
      TOP HEADER BAR
 =========================== -->
-<div class="top-header">
-  <div class="container header-container">
+  <div class="top-header">
+    <div class="container header-container">
 
-    <!-- LEFT: LOGO -->
-    <div class="header-left">
-      <img src="images/FINAL ACHARIYA & 25th year ACHARIYA LOGO_FINAL-2.png" class="logo" alt="Logo">
+      <!-- LEFT: LOGO -->
+      <div class="header-left">
+        <img src="images/FINAL ACHARIYA & 25th year ACHARIYA LOGO_FINAL-2.png" class="logo" alt="Logo">
+      </div>
+
+      <!-- RIGHT: CONTACT + SOCIAL -->
+      <div class="header-right">
+
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:hello@achariya.org" class="contactlink">hello@achariya.org</a>
+        </div>
+
+        <div class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+916232396232" class="contactlink">+91 6232 39 6232</a>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://www.facebook.com/AchariyaABSMCBSEChennai/" target="_blank"><i
+              class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/achariya_adyar/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCcbfIHafvJuRnxb567Jc6_A" target="_blank"><i
+              class="fa-brands fa-youtube"></i></a>
+        </div>
+
+      </div>
+
     </div>
-
-    <!-- RIGHT: CONTACT + SOCIAL -->
-    <div class="header-right">
-
-      <div class="contact-item">
-        <i class="fa-solid fa-envelope"></i>
-        <a href="mailto:hello@achariya.org" class="contactlink">hello@achariya.org</a>
-      </div>
-
-      <div class="contact-item">
-        <i class="fa-solid fa-phone"></i>
-        <a href="tel:+916232396232" class="contactlink">+91 6232 39 6232</a>
-      </div>
-
-      <div class="social-icons">
-        <a href="https://www.facebook.com/AchariyaABSMCBSEChennai/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/achariya_adyar/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.youtube.com/channel/UCcbfIHafvJuRnxb567Jc6_A" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-      </div>
-
-    </div>
-
   </div>
-</div>
 
 
 
-<div class="top-announcement">
-  Celebrating 25 Years of Excellence in Education - Now in ADYAR |
-  Adyar’s Most Trusted Pre-Montessori for Toddler  to Mont 2 
-</div>
+  <div class="top-announcement">
+    Celebrating 25 Years of Excellence in Education - Now in |
+    Adyar’s Most Trusted Pre-Montessori for Toddler to Mont 2
+  </div>
 
-<!-- ===========================  #popinans
+  <!-- ===========================  #popinans
      FIRST SECTION (HERO + FORM)
 =========================== -->
-<section class="container py-5">
+  <section class="container admission-wrapper container py-5">
 
-  <div class="row align-items-stretch g-4"> <!-- use stretch instead of center -->
+    <div class="row g-4 align-items-center ">
 
-    <!-- LEFT IMAGE -->
-    <div class="col-lg-7 reveal d-flex">
-      <img src="images/Web Poster copy.jpg" class="hero-img flex-grow-1" alt="">
-    </div>
-
-    <!-- RIGHT FORM -->
-<div class="col-lg-5 reveal d-flex">
-  <div class="form-card flex-grow-1 d-flex flex-column">
-
-    <!-- RED HEADER -->
-    <div class="form-header">
-      Admission Open 2026 - 2027
-    </div>
-
-    <!-- WHITE FORM BODY -->
-    <div class="form-body flex-grow-1">
-
-<form id="admissionForm">
-
-  <input id="name" class="form-control mb-3" placeholder="Enter Name *">
-
-  <input id="email" class="form-control mb-3" type="email" placeholder="Enter Email Address *">
-
-  <div class="d-flex gap-2 mb-3">
-    <select id="countryCode" class="form-select country-code">
-      <option>+91</option>
-    </select>
-    <input id="mobile" class="form-control mobile-input" placeholder="Enter Mobile Number *">
-  </div>
-
-  <select id="academicYear" class="form-select mb-3">
-    <option selected disabled>Select Academic Year </option>
-    <option>2026 - 2027</option>
-  </select>
-
-  <div class="row g-2 mb-3">
-    <div class="col-6">
-      <select id="board" class="form-select board-select">
-        <option selected disabled>Select Board *</option>
-        <option>Montessori Early Childhood Program</option>
-      </select>
-    </div>
-
-    <div class="col-6">
-      <select id="grade" class="form-select grade-select">
-        <option selected disabled>Select Class / Grade *</option>
-        <option>Toddler (1.5–2.5 years)</option>
-        <option>Montessori 1 (Age 2.5–3.5)</option>
-        <option>Montessori 2 (Age 3.5–4.5)</option>
-      </select>
-    </div>
-  </div>
-
-</form>
-
-    </div>
-
-    <!-- FIXED BOTTOM BUTTON -->
-    <button class="btn  text-white py-2 register-btn">
-      Register
-    </button>
-
-  </div>
-</div>
-
-  </div>
-</section>
-
-
-
-
-<section class="container my-5 stats-section">
-
-  <div class="stats-wrapper">
-
-    <!-- CARD 1 -->
-    <div class="stat-card card-1">
-      <div class="icon-circle">
-        <i class="fa-solid fa-building-columns icon"></i>
+      <!-- LEFT IMAGE -->
+      <div class="col-lg-7 col-md-12 text-center">
+        <img src="images/Web Poster copy.jpg" class="hero-img img-fluid rounded" alt="">
       </div>
-      <h3><span class="count-num" data-target="25">0</span>+ Years</h3>
-      <p>A Legacy of Learning Excellence !</p>
-    </div>
 
-    <!-- CARD 2 -->
-    <div class="stat-card card-2">
-      <div class="icon-circle">
-        <i class="fa-solid fa-users icon"></i>
+      <!-- RIGHT FORM -->
+      <div class="col-lg-5 col-md-12">
+        <div class="form-card d-flex flex-column w-100">
+
+          <div class="form-header text-center">
+            Admission Open 2026 – 2027
+          </div>
+
+          <div class="form-body">
+            <form id="admissionForm">
+
+              <input id="name" name="name" class="form-control mb-3" placeholder="Enter Name *" required>
+              <input id="email" name="email" type="email" class="form-control mb-3" placeholder="Enter Email Address *"
+                required>
+
+              <div class="row g-2 mb-3">
+                <div class="col-4">
+                  <select id="countryCode" name="countryCode" class="form-select">
+                    <option value="+91">+91</option>
+                  </select>
+                </div>
+                <div class="col-8">
+                  <input id="mobile" name="mobile" class="form-control" placeholder="Enter Mobile Number *" required>
+                </div>
+              </div>
+
+              <select id="academicYear" name="academicYear" class="form-select mb-3" required>
+                <option value="" disabled selected>Select Academic Year</option>
+                <option value="2026 - 2027">2026 - 2027</option>
+              </select>
+
+              <label class="fw-semibold mb-1">Select Board</label>
+              <select id="grade" name="select_board" class="form-select mb-3" onchange="updateOptions()" required>
+                <option value="" selected disabled>Select Board</option>
+                <option value="ICSE/ISC School">ICSE/ISC School</option>
+                <option value="CBSE School">CBSE School</option>
+                <option value="State Board School">State Board School</option>
+              </select>
+
+              <label class="fw-semibold mb-1">Standard</label>
+              <select id="options" name="standard" class="form-select mb-3" onchange="updateSubOptions()" required>
+                <option value="">Select Standard</option>
+              </select>
+
+              <label class="fw-semibold mb-1">Campus Locations</label>
+              <p class="py-1" style="font-size:12px; opacity:0.75; color:#555; margin-top:-4px; line-height:1.3;">
+                ASM – ACHARIYA SIKSHA MANDIR <br>
+                ABSM – ACHARIYA BALA SIKSHA MANDIR <br>
+                AWGI – ACHARIYA THE WESTERN GHATS INTERNATIONAL SCHOOL
+              </p>
+
+              <select id="subOptions" name="campus_location" class="form-select mb-1" required>
+                <option value="">Select Location</option>
+              </select>
+
+
+
+
+            </form>
+          </div>
+
+          <button class="btn register-btn text-white py-2 mt-2" type="submit" form="admissionForm">
+            Register
+          </button>
+
+        </div>
       </div>
-<h3><span class="count-num" data-target="40">0</span>+ Campuses</h3>      <p>One Vision, Empowering Minds,<br>Enriching Lives !</p>
-    </div>
 
-    <!-- CARD 3 -->
-    <div class="stat-card card-3">
-      <div class="icon-circle">
-        <i class="fa-solid fa-trophy icon"></i>
+    </div>
+  </section>
+
+
+
+
+
+
+  <section class=" container my-5 stats-section">
+
+    <div class="stats-wrapper">
+
+      <!-- CARD 1 -->
+      <div class="stat-card card-1">
+        <div class="icon-circle">
+          <i class="fa-solid fa-building-columns icon"></i>
+        </div>
+        <h3><span class="count-num" data-target="25">0</span>+ Years</h3>
+        <p>A Legacy of Learning Excellence !</p>
       </div>
-<h3><span class="count-num" data-target="250">0</span>+ World Records</h3>      <p>Inspiring Young Minds,<br>Shaping a Brighter Future !</p>
-    </div>
 
-    <!-- CARD 4 -->
-    <div class="stat-card card-4">
-      <div class="icon-circle">
-        <i class="fa-solid fa-chalkboard-user icon"></i>
+      <!-- CARD 2 -->
+      <div class="stat-card card-2">
+        <div class="icon-circle">
+          <i class="fa-solid fa-users icon"></i>
+        </div>
+        <h3><span class="count-num" data-target="40">0</span>+ Campuses</h3>
+        <p>One Vision, Empowering Minds,<br>Enriching Lives !</p>
       </div>
-<h3><span class="count-num" data-target="1000">0</span>+ Teachers</h3>      <p>Passionate Educators Crafting<br>Futures !</p>
+
+      <!-- CARD 3 -->
+      <div class="stat-card card-3">
+        <div class="icon-circle">
+          <i class="fa-solid fa-trophy icon"></i>
+        </div>
+        <h3><span class="count-num" data-target="250">0</span>+ World Records</h3>
+        <p>Inspiring Young Minds,<br>Shaping a Brighter Future !</p>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="stat-card card-4">
+        <div class="icon-circle">
+          <i class="fa-solid fa-chalkboard-user icon"></i>
+        </div>
+        <h3><span class="count-num" data-target="1000">0</span>+ Teachers</h3>
+        <p>Passionate Educators Crafting<br>Futures !</p>
+      </div>
+
     </div>
 
+  </section>
+
+  <div class="footer-bottom">
+    © 2026 Achariya School. All Rights Reserved.
   </div>
 
-</section>
 
 
 
 
-<div class="footer-bottom">
-  © 2026 Achariya School. All Rights Reserved.
-</div>
-
-<script>
-// scroll reveal
-const elements = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      entry.target.classList.add('in-view');
-      observer.unobserve(entry.target);
-    }
-  });
-},{threshold:0.2});
-elements.forEach(el=>observer.observe(el));
-</script>
 
 
-
-<script>
-const counters = document.querySelectorAll(".count-num");
-let counted = false;
-
-function runCounter() {
-  if (counted) return;
-
-  const sectionTop = document.querySelector(".stats-section").getBoundingClientRect().top;
-  const triggerPoint = window.innerHeight - 150;
-
-  if (sectionTop < triggerPoint) {
-    counters.forEach(counter => {
-      counter.innerText = "0";
-      let target = +counter.getAttribute("data-target");
-      let speed = target / 100; // higher = faster
-
-      const updateCounter = () => {
-        let current = +counter.innerText;
-        if (current < target) {
-          counter.innerText = Math.ceil(current + speed);
-          setTimeout(updateCounter, 20);
-        } else {
-          counter.innerText = target;
-        }
-      };
-
-      updateCounter();
-    });
-
-    counted = true;
-  }
-}
-
-window.addEventListener("scroll", runCounter);
-</script>
-
-
-<script>
-const scriptURL = "https://script.google.com/macros/s/AKfycbyNOINpE4bayPUqmPlplJfVV6cFFaxaUQmUISRoJ7nWHhLQw3mjBknr_RIshbhhvwWvcg/exec"; // paste your Google Script URL
-
-document.querySelector(".register-btn").addEventListener("click", function () {
-
-    const data = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        countryCode: document.getElementById("countryCode").value,
-        mobile: document.getElementById("mobile").value,
-        academicYear: document.getElementById("academicYear").value,
-        board: document.getElementById("board").value,
-        grade: document.getElementById("grade").value
-    };
-
-    fetch(scriptURL, {
-        method: "POST",
-        body: JSON.stringify(data)
-    })
-    .then(response => response.json())
-    .then(() => {
-        document.getElementById("successPopup").style.display = "flex";
-        document.getElementById("admissionForm").reset();
-    })
-    .catch(err => alert("Error: " + err));
-});
-</script>
-
-
-<div id="successPopup" style="
+  <div id="successPopup" style="
   display:none;
   position:fixed;
   inset:0;
@@ -275,7 +213,7 @@ document.querySelector(".register-btn").addEventListener("click", function () {
   align-items:center;
   z-index:9999;
 ">
-  <div style="
+    <div style="
     background:white;
     padding:30px;
     border-radius:10px;
@@ -284,24 +222,757 @@ document.querySelector(".register-btn").addEventListener("click", function () {
         font-family: 'Poppins', sans-serif;
 
   ">
-    <h4 class="text-success">Registered Successfully!</h4>
-    <p>Your details have been submitted.</p>
-    <button onclick="document.getElementById('successPopup').style.display='none'" 
-      class="btn btn-primary">
-      OK
-    </button>
-     <a href="https://achariya.in/" class="btn btn-success w-100" style="margin-top:12px; display:block;">
-      Go to Achariya Website
-    </a>
+      <h4 class="text-success">Registered Successfully!</h4>
+      <p>Your details have been submitted.</p>
+      <button onclick="document.getElementById('successPopup').style.display='none'" class="btn btn-primary">
+        OK
+      </button>
+      <a href="https://achariya.in/" class="btn btn-success w-100" style="margin-top:12px; display:block;">
+        Go to Achariya Website
+      </a>
+    </div>
   </div>
-</div>
+
+
+
+  <!-- ========== SCROLL REVEAL ========== -->
+  <script>
+    const elements = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    elements.forEach(el => observer.observe(el));
+  </script>
+
+  <!-- ========== COUNTER ANIMATION ========== -->
+  <script>
+    const counters = document.querySelectorAll(".count-num");
+    let counted = false;
+
+    function runCounter() {
+      if (counted) return;
+
+      const sectionTop = document.querySelector(".stats-section").getBoundingClientRect().top;
+      const triggerPoint = window.innerHeight - 150;
+
+      if (sectionTop < triggerPoint) {
+        counters.forEach(counter => {
+          counter.innerText = "0";
+          let target = +counter.getAttribute("data-target");
+          let speed = target / 100;
+
+          const updateCounter = () => {
+            let current = +counter.innerText;
+            if (current < target) {
+              counter.innerText = Math.ceil(current + speed);
+              setTimeout(updateCounter, 20);
+            } else {
+              counter.innerText = target;
+            }
+          };
+
+          updateCounter();
+        });
+        counted = true;
+      }
+    }
+
+    window.addEventListener("scroll", runCounter);
+  </script>
+
+  <!-- ========== GOOGLE SHEET FORM SUBMISSION ========== -->
+  <script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbyERU1bsjbCqw21UMv2oc3_lgLO7lD3lOO2BD-2Cldb-fmfccDTMDSVOzP1KyMnPTEY/exec";
+
+    function submitForm(event) {
+      event.preventDefault();
+
+      const form = document.getElementById("admissionForm");
+
+      fetch(scriptURL, {
+        method: "POST",
+        body: new FormData(form)
+      })
+        .then(() => {
+          document.getElementById("successPopup").style.display = "flex";
+          form.reset();
+        })
+        .catch(err => alert("Error: " + err));
+    }
+
+    document.getElementById("admissionForm").addEventListener("submit", submitForm);
+  </script>
+
+  <!-- ========== ORDER ID GENERATOR ========== -->
+  <script>
+    function generateOrderID() {
+      const min = 100000000000000;
+      const max = 999999999999999;
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function shuffleOrderID(orderID) {
+      const digits = orderID.toString().split('');
+      for (let i = digits.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [digits[i], digits[j]] = [digits[j], digits[i]];
+      }
+      return digits.join('');
+    }
+
+    function setOrderID() {
+      const orderID = generateOrderID();
+      if (document.getElementById('order_id')) {
+        document.getElementById('order_id').value = shuffleOrderID(orderID);
+      }
+    }
+
+    window.onload = setOrderID;
+  </script>
+
+  <!-- ========== DYNAMIC DROPDOWN LOGIC (UNCHANGED) ========== -->
+  <script>
+    /* Your updateOptions() and updateSubOptions() script stays exactly the same.
+       Keep the full code here exactly as you wrote it originally. */
+  </script>
+
+
+  <script>
+    function updateOptions() {
+      let grade = document.getElementById("grade").value;
+      let options = document.getElementById("options");
+      let subOptions = document.getElementById("subOptions");
+
+      options.innerHTML = "";  // Clear previous options
+      subOptions.innerHTML = "";  // Clear sub-options when grade changes
+
+      if (grade === "ICSE/ISC School") {
+        options.innerHTML = `
+            <option disabled="disabled" selected="selected"  >Select Standard</option>
+
+                    <option value="aklavya-1">Grade 1</option>
+                    <option value="aklavya-2">Grade 2</option>
+                    <option value="aklavya-3">Grade 3</option>
+                    <option value="aklavya-4">Grade 4</option>
+                    <option value="aklavya-5">Grade 5</option>
+                    <option value="aklavya-6">Grade 6</option>
+                    <option value="aklavya-7">Grade 7</option>
+                    <option value="aklavya-8">Grade 8</option>
+                    <option value="aklavya-9">Grade 9</option>
+                    <option value="aklavya-11">Grade 11</option>
+            
+                   
+                `;
+      } else if (grade === "CBSE School") {
+        options.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Standard</option>
+                <option value="Toddler"> Toddler</option>
+                <option value="ASM-mont-1"> Mont-1 (LKG)</option>
+                <option value="ASM-mont-2"> Mont-2 (UKG)</option>
+                    <option value="ASM-1">Grade 1</option>
+                    <option value="ASM-2">Grade 2</option>
+                    <option value="ASM-3">Grade 3</option>
+                    <option value="ASM-4">Grade 4</option>
+                    <option value="ASM-5">Grade 5</option>
+                    <option value="ASM-6">Grade 6</option>
+                    <option value="ASM-7">Grade 7</option>
+                    <option value="ASM-8">Grade 8</option>
+                    <option value="ASM-9">Grade 9</option>
+                    <option value="ASM-11">Grade 11</option>
+                
+                `;
+      } else if (grade === "State Board School") {
+        options.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Standard</option>
+                   <option value="SSV-mont-1"> Mont-1 (LKG)</option>
+                <option value="SSV-mont-2"> Mont-2 (UKG)</option>
+                    <option value="SSV-1">Grade 1</option>
+                    <option value="SSV-2">Grade 2</option>
+                    <option value="SSV-3">Grade 3</option>
+                    <option value="SSV-4">Grade 4</option>
+                    <option value="SSV-5">Grade 5</option>
+                    <option value="SSV-6">Grade 6</option>
+                    <option value="SSV-7">Grade 7</option>
+                    <option value="SSV-8">Grade 8</option>
+                    <option value="SSV-9">Grade 9</option>
+                    <option value="SSV-11">Grade 11</option>
+              
+                `;
+      }
+    }
+
+    function updateSubOptions() {
+      let option = document.getElementById("options").value;
+      let subOptions = document.getElementById("subOptions");
+
+      subOptions.innerHTML = "";  // Clear previous sub-options
+
+      if (option === "aklavya-mont-1") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value="Aklavya Intl School  - THENGAITHETTU, Puducherry">Aklavya Intl School  - THENGAITHETTU, Puducherry</option>
+                    <option value="Aklavya Intl School  - ANUGRAGA,  Puducherry">Aklavya Intl School  - ANUGRAGA,  Puducherry</option>
+                    <option value="Aklavya Intl School  - REDDIYARPALAYAM, Puducherry">Aklavya Intl School  - REDDIYARPALAYAM, Puducherry</option>
+             
+                `;
+      }
+      else if (option === "aklavya-mont-2") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value="Aklavya Intl School  - THENGAITHETTU, Puducherry">Aklavya Intl School  - THENGAITHETTU, Puducherry</option>
+                     <option value="Aklavya Intl School  - ANUGRAGA,  Puducherry">Aklavya Intl School  - ANUGRAGA,  Puducherry</option>
+                    <option value="Aklavya Intl School  - REDDIYARPALAYAM, Puducherry">Aklavya Intl School  - REDDIYARPALAYAM, Puducherry</option>
+                  
+                `;
+      }
+      else if (option === "aklavya-1") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value="Aklavya Intl School  - THENGAITHETTU, Puducherry">Aklavya Intl School  - THENGAITHETTU, Puducherry</option>
+                    <option value="Aklavya Intl School  - REDDIYARPALAYAM, Puducherry">Aklavya Intl School  - REDDIYARPALAYAM, Puducherry</option>
+                  
+                `;
+      }
+      else if (option === "aklavya-2") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value="Aklavya Intl School  - THENGAITHETTU, Puducherry">Aklavya Intl School  - THENGAITHETTU, Puducherry</option>
+                  
+                `;
+      }
+      else if (option === "aklavya-3") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value="Aklavya Intl School  - THENGAITHETTU, Puducherry">Aklavya Intl School  - THENGAITHETTU, Puducherry</option>
+                  
+                `;
+      }
+      else if (option === "aklavya-4") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value="Aklavya Intl School  - THENGAITHETTU, Puducherry">Aklavya Intl School  - THENGAITHETTU, Puducherry</option>
+                  
+                `;
+      }
+      else if (option === "aklavya-5") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value="Aklavya Intl School  - THENGAITHETTU, Puducherry">Aklavya Intl School  - THENGAITHETTU, Puducherry</option>
+                  
+                `;
+      } else if (option === "aklavya-6") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value="Aklavya Intl School  - THENGAITHETTU, Puducherry">Aklavya Intl School  - THENGAITHETTU, Puducherry</option>
+                  
+                `;
+      } else if (option === "aklavya-7") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value="Aklavya Intl School  - THENGAITHETTU, Puducherry">Aklavya Intl School  - THENGAITHETTU, Puducherry</option>
+                  
+                `;
+      }
+      else if (option === "aklavya-8") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value="Aklavya Intl School  - THENGAITHETTU, Puducherry">Aklavya Intl School  - THENGAITHETTU, Puducherry</option>
+                  
+                `;
+      } else if (option === "aklavya-9") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value="Aklavya Intl School  - THENGAITHETTU, Puducherry">Aklavya Intl School  - THENGAITHETTU, Puducherry</option>
+                  
+                `;
+      } else if (option === "aklavya-10") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value="Aklavya Intl School  - THENGAITHETTU, Puducherry">Aklavya Intl School  - THENGAITHETTU, Puducherry</option>
+                  
+                `;
+      } else if (option === "aklavya-11") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value="Aklavya Intl School  - THENGAITHETTU, Puducherry">Aklavya Intl School  - THENGAITHETTU, Puducherry</option>
+                  
+                `;
+      } else if (option === "aklavya-12") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value="Aklavya Intl School  - THENGAITHETTU, Puducherry">Aklavya Intl School  - THENGAITHETTU, Puducherry</option>
+                  
+                `;
+      }
+
+      else if (option === "Toddler") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                <option value=" ASM  - VILLIANUR, Puducherry "> ASM  - VILLIANUR, Puducherry </option>
+<option value=" ABSM -THENGAITHETTU, Puducherry "> ABSM -THENGAITHETTU, Puducherry </option>
+                    <option value=" ASM - MUTHARAYAPALAYAM, Puducherry"> ASM - MUTHARAYAPALAYAM, Puducherry</option>
+                    <option value=" ABSM - VENKATA NAGAR, Puducherry "> ABSM - VENKATA NAGAR, Puducherry </option>
+<option value=" ASM - THAVALAKUPPAM, Puducherry "> ASM - THAVALAKUPPAM, Puducherry </option>
+<option value=" ASM - MOOLAKULAM, Puducherry "> ASM - MOOLAKULAM, Puducherry </option>
+<option value=" ABSM - GORIMEDU, Puducherry "> ABSM - GORIMEDU, Puducherry </option>
+<option value=" ABSM - LAWSPET, Puducherry "> ABSM - LAWSPET, Puducherry </option>
+<option value=" ABSM - KALAPET, Puducherry "> ABSM - KALAPET, Puducherry </option>
+<option value=" ASM - KARAIKAL, Puducherry "> ASM - KARAIKAL, Puducherry </option>
+<option value=" ASM - VILLUPURAM, Tamil Nadu "> ASM - VILLUPURAM, Tamil Nadu </option>
+<option value=" ASM - ALAPAKKAM, Chennai, Tamil Nadu "> ASM - ALAPAKKAM, Chennai, Tamil Nadu </option>
+<option value=" ABSM - KK NAGAR, Chennai, Tamil Nadu "> ABSM - KK NAGAR, Chennai, Tamil Nadu </option>
+<option value=" ABSM - ADYAR, Chennai, Tamil Nadu "> ABSM - ADYAR, Chennai, Tamil Nadu </option>
+<option value=" ABSM - TINDIVANAM, Tamil Nadu "> ABSM - TINDIVANAM, Tamil Nadu </option>
+<option value=" ABSM - VIRUGAMBAKKAM, Chennai, Tamil Nadu "> ABSM - VIRUGAMBAKKAM, Chennai, Tamil Nadu </option>
+<option value=" ABSM - DASARATHAPURAM, Chennai, Tamil Nadu "> ABSM - DASARATHAPURAM, Chennai, Tamil Nadu </option>
+<option value=" ABSM - SALIGRAMAM, Chennai, Tamil Nadu "> ABSM - SALIGRAMAM, Chennai, Tamil Nadu </option>
+<option value=" ABSM - R.K NAGAR, Chennai, Tamil Nadu "> ABSM - R.K NAGAR, Chennai, Tamil Nadu </option>
+<option value=" ABSM - ALAPAKKAM, Chennai, Tamil Nadu "> ABSM - ALAPAKKAM, Chennai, Tamil Nadu </option>
+<option value=" ABSM - THIRU NAGAR, Chennai, Tamil Nadu "> ABSM - THIRU NAGAR, Chennai, Tamil Nadu </option>
+<option value=" ABSM - MUTHIALPET, Puducherry "> ABSM - MUTHIALPET, Puducherry </option>
+
+
+<option value=" AWGI - ETTIMADAI, Coimbatore, Tamil Nadu "> AWGI - ETTIMADAI, Coimbatore, Tamil Nadu </option>
+<option value=" ASM - ERODE (Main branch ), Tamil Nadu "> ASM - ERODE (Main branch ), Tamil Nadu </option>
+<option value=" ASM - ERODE, Tamil Nadu "> ASM - ERODE, Tamil Nadu </option>
+<option value=" ABSM - NOLAMBUR, Chennai, Tamil Nadu "> ABSM - NOLAMBUR, Chennai, Tamil Nadu </option>
+<option value=" ASM - TRICHY, Tamil Nadu "> ASM - TRICHY, Tamil Nadu </option>
+
+<option value=" ABSM - MADURAVOYAL, Chennai, Tamil Nadu "> ABSM - MADURAVOYAL, Chennai, Tamil Nadu </option>
+<option value=" ABSM - THILLAI NAGAR, TRICHY, Tamil Nadu "> ABSM - THILLAI NAGAR, TRICHY, Tamil Nadu </option>
+
+
+                  
+                `;
+      }
+      else if (option === "ASM-mont-1") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                <option value=" ASM  - VILLIANUR, Puducherry "> ASM  - VILLIANUR, Puducherry </option>
+<option value=" ABSM -THENGAITHETTU, Puducherry "> ABSM -THENGAITHETTU, Puducherry </option>
+                    <option value=" ASM - MUTHARAYAPALAYAM, Puducherry"> ASM - MUTHARAYAPALAYAM, Puducherry</option>
+                    <option value=" ABSM - VENKATA NAGAR, Puducherry "> ABSM - VENKATA NAGAR, Puducherry </option>
+<option value=" ASM - THAVALAKUPPAM, Puducherry "> ASM - THAVALAKUPPAM, Puducherry </option>
+<option value=" ASM - MOOLAKULAM, Puducherry "> ASM - MOOLAKULAM, Puducherry </option>
+<option value=" ABSM - GORIMEDU, Puducherry "> ABSM - GORIMEDU, Puducherry </option>
+<option value=" ABSM - LAWSPET, Puducherry "> ABSM - LAWSPET, Puducherry </option>
+<option value=" ABSM - KALAPET, Puducherry "> ABSM - KALAPET, Puducherry </option>
+<option value=" ASM - KARAIKAL, Puducherry "> ASM - KARAIKAL, Puducherry </option>
+<option value=" ASM - VILLUPURAM, Tamil Nadu "> ASM - VILLUPURAM, Tamil Nadu </option>
+<option value=" ASM - ALAPAKKAM, Chennai, Tamil Nadu "> ASM - ALAPAKKAM, Chennai, Tamil Nadu </option>
+<option value=" ABSM - KK NAGAR, Chennai, Tamil Nadu "> ABSM - KK NAGAR, Chennai, Tamil Nadu </option>
+<option value=" ABSM - ADYAR, Chennai, Tamil Nadu "> ABSM - ADYAR, Chennai, Tamil Nadu </option>
+<option value=" ABSM - TINDIVANAM, Tamil Nadu "> ABSM - TINDIVANAM, Tamil Nadu </option>
+<option value=" ABSM - VIRUGAMBAKKAM, Chennai, Tamil Nadu "> ABSM - VIRUGAMBAKKAM, Chennai, Tamil Nadu </option>
+<option value=" ABSM - DASARATHAPURAM, Chennai, Tamil Nadu "> ABSM - DASARATHAPURAM, Chennai, Tamil Nadu </option>
+<option value=" ABSM - SALIGRAMAM, Chennai, Tamil Nadu "> ABSM - SALIGRAMAM, Chennai, Tamil Nadu </option>
+<option value=" ABSM - R.K NAGAR, Chennai, Tamil Nadu "> ABSM - R.K NAGAR, Chennai, Tamil Nadu </option>
+<option value=" ABSM - ALAPAKKAM, Chennai, Tamil Nadu "> ABSM - ALAPAKKAM, Chennai, Tamil Nadu </option>
+<option value=" ABSM - THIRU NAGAR, Chennai, Tamil Nadu "> ABSM - THIRU NAGAR, Chennai, Tamil Nadu </option>
+<option value=" ABSM - MUTHIALPET, Puducherry "> ABSM - MUTHIALPET, Puducherry </option>
+
+
+<option value=" AWGI - ETTIMADAI, Coimbatore, Tamil Nadu "> AWGI - ETTIMADAI, Coimbatore, Tamil Nadu </option>
+<option value=" ASM - ERODE (Main branch ), Tamil Nadu "> ASM - ERODE (Main branch ), Tamil Nadu </option>
+<option value=" ASM - ERODE, Tamil Nadu "> ASM - ERODE, Tamil Nadu </option>
+<option value=" ABSM - NOLAMBUR, Chennai, Tamil Nadu "> ABSM - NOLAMBUR, Chennai, Tamil Nadu </option>
+<option value=" ASM - TRICHY, Tamil Nadu "> ASM - TRICHY, Tamil Nadu </option>
+
+<option value=" ABSM - MADURAVOYAL, Chennai, Tamil Nadu "> ABSM - MADURAVOYAL, Chennai, Tamil Nadu </option>
+<option value=" ABSM - THILLAI NAGAR, TRICHY, Tamil Nadu "> ABSM - THILLAI NAGAR, TRICHY, Tamil Nadu </option>
+
+
+                  
+                `;
+      }
+      else if (option === "ASM-mont-2") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                  <option value=" ASM  - VILLIANUR, Puducherry "> ASM  - VILLIANUR, Puducherry </option>
+<option value=" ABSM -THENGAITHETTU, Puducherry "> ABSM -THENGAITHETTU, Puducherry </option>
+<option value=" ASM - MUTHARAYAPALAYAM, Puducherry"> ASM - MUTHARAYAPALAYAM, Puducherry</option>
+<option value=" ABSM - MUTHIALPET, Puducherry "> ABSM - MUTHIALPET, Puducherry </option>
+<option value=" ASM - THAVALAKUPPAM, Puducherry "> ASM - THAVALAKUPPAM, Puducherry </option>
+<option value=" ASM - MOOLAKULAM, Puducherry "> ASM - MOOLAKULAM, Puducherry </option>
+<option value=" ABSM - VENKATA NAGAR, Puducherry "> ABSM - VENKATA NAGAR, Puducherry </option>
+<option value=" ABSM - GORIMEDU, Puducherry "> ABSM - GORIMEDU, Puducherry </option>
+<option value=" ABSM - LAWSPET, Puducherry "> ABSM - LAWSPET, Puducherry </option>
+<option value=" ABSM - KALAPET, Puducherry "> ABSM - KALAPET, Puducherry </option>
+<option value=" ASM - KARAIKAL, Puducherry "> ASM - KARAIKAL, Puducherry </option>
+<option value=" ASM - VILLUPURAM, Tamil Nadu "> ASM - VILLUPURAM, Tamil Nadu </option>
+<option value=" ASM - ALAPAKKAM, Chennai, Tamil Nadu "> ASM - ALAPAKKAM, Chennai, Tamil Nadu </option>
+<option value=" ABSM - ADYAR, Chennai, Tamil Nadu "> ABSM - ADYAR, Chennai, Tamil Nadu </option>
+<option value=" ABSM - KK NAGAR, Chennai, Tamil Nadu "> ABSM - KK NAGAR, Chennai, Tamil Nadu </option>
+<option value=" ABSM - TINDIVANAM, Tamil Nadu "> ABSM - TINDIVANAM, Tamil Nadu </option>
+<option value=" ABSM - VIRUGAMBAKKAM, Chennai, Tamil Nadu "> ABSM - VIRUGAMBAKKAM, Chennai, Tamil Nadu </option>
+<option value=" ABSM - DASARATHAPURAM, Chennai, Tamil Nadu "> ABSM - DASARATHAPURAM, Chennai, Tamil Nadu </option>
+<option value=" ABSM - SALIGRAMAM, Chennai, Tamil Nadu "> ABSM - SALIGRAMAM, Chennai, Tamil Nadu </option>
+<option value=" ABSM - R.K NAGAR, Chennai, Tamil Nadu "> ABSM - R.K NAGAR, Chennai, Tamil Nadu </option>
+<option value=" ABSM - ALAPAKKAM, Chennai, Tamil Nadu "> ABSM - ALAPAKKAM, Chennai, Tamil Nadu </option>
+<option value=" ABSM - THIRU NAGAR, Chennai, Tamil Nadu "> ABSM - THIRU NAGAR, Chennai, Tamil Nadu </option>
+<option value=" AWGI - ETTIMADAI, Coimbatore, Tamil Nadu "> AWGI - ETTIMADAI, Coimbatore, Tamil Nadu </option>
+<option value=" ASM - ERODE (Main branch ), Tamil Nadu "> ASM - ERODE (Main branch ), Tamil Nadu </option>
+<option value=" ASM - ERODE, Tamil Nadu "> ASM - ERODE, Tamil Nadu </option>
+<option value=" ABSM - NOLAMBUR, Chennai, Tamil Nadu "> ABSM - NOLAMBUR, Chennai, Tamil Nadu </option>
+<option value=" ASM - TRICHY, Tamil Nadu "> ASM - TRICHY, Tamil Nadu </option>
+<option value=" ABSM - MADURAVOYAL, Chennai, Tamil Nadu "> ABSM - MADURAVOYAL, Chennai, Tamil Nadu </option>
+<option value=" ABSM - THILLAI NAGAR, TRICHY, Tamil Nadu "> ABSM - THILLAI NAGAR, TRICHY, Tamil Nadu </option>
+
+                  
+                `;
+      }
+      else if (option === "ASM-1") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                   <option value=" ASM  - VILLIANUR, Puducherry "> ASM  - VILLIANUR, Puducherry </option>
+<option value=" ABSM -THENGAITHETTU, Puducherry "> ABSM -THENGAITHETTU, Puducherry </option>
+<option value=" ASM - MUTHARAYAPALAYAM, Puducherry"> ASM - MUTHARAYAPALAYAM, Puducherry</option>
+<option value=" ABSM - MUTHIALPET, Puducherry "> ABSM - MUTHIALPET, Puducherry </option>
+<option value=" ASM - THAVALAKUPPAM, Puducherry "> ASM - THAVALAKUPPAM, Puducherry </option>
+<option value=" ASM - MOOLAKULAM, Puducherry "> ASM - MOOLAKULAM, Puducherry </option>
+<option value=" ABSM - GORIMEDU, Puducherry "> ABSM - GORIMEDU, Puducherry </option>
+<option value=" ABSM - LAWSPET, Puducherry "> ABSM - LAWSPET, Puducherry </option>
+<option value=" ABSM - KALAPET, Puducherry "> ABSM - KALAPET, Puducherry </option>
+<option value=" ASM - KARAIKAL, Puducherry "> ASM - KARAIKAL, Puducherry </option>
+<option value=" ASM - VILLUPURAM, Tamil Nadu "> ASM - VILLUPURAM, Tamil Nadu </option>
+<option value=" ASM - ALAPAKKAM, Chennai, Tamil Nadu "> ASM - ALAPAKKAM, Chennai, Tamil Nadu </option>
+<option value=" ABSM - VALASARAVAKKAM, Chennai, Tamil Nadu "> ABSM - VALASARAVAKKAM, Chennai, Tamil Nadu </option>
+<option value=" ABSM - PADMANABHA NAGAR, Chennai, Tamil Nadu "> ABSM - PADMANABHA NAGAR, Chennai, Tamil Nadu </option>
+<option value=" ABSM - KK NAGAR, Chennai, Tamil Nadu "> ABSM - KK NAGAR, Chennai, Tamil Nadu </option>
+<option value=" ABSM - TINDIVANAM, Tamil Nadu "> ABSM - TINDIVANAM, Tamil Nadu </option>
+<option value=" ABSM - VIRUGAMBAKKAM, Chennai, Tamil Nadu "> ABSM - VIRUGAMBAKKAM, Chennai, Tamil Nadu </option>
+<option value=" ABSM - DASARATHAPURAM, Chennai, Tamil Nadu "> ABSM - DASARATHAPURAM, Chennai, Tamil Nadu </option>
+<option value=" ABSM - SALIGRAMAM, Chennai, Tamil Nadu "> ABSM - SALIGRAMAM, Chennai, Tamil Nadu </option>
+<option value=" ABSM - R.K NAGAR, Chennai, Tamil Nadu "> ABSM - R.K NAGAR, Chennai, Tamil Nadu </option>
+<option value=" ABSM - THIRU NAGAR, Chennai, Tamil Nadu "> ABSM - THIRU NAGAR, Chennai, Tamil Nadu </option>
+<option value=" AWGI - ETTIMADAI, Coimbatore, Tamil Nadu "> AWGI - ETTIMADAI, Coimbatore, Tamil Nadu </option>
+<option value=" ASM - ERODE (Main branch ), Tamil Nadu "> ASM - ERODE (Main branch ), Tamil Nadu </option>
+<option value=" ABSM - NOLAMBUR, Chennai, Tamil Nadu "> ABSM - NOLAMBUR, Chennai, Tamil Nadu </option>
+<option value=" ASM - TRICHY, Tamil Nadu "> ASM - TRICHY, Tamil Nadu </option>
+<option value=" ABSM - THILLAI NAGAR, TRICHY, Tamil Nadu "> ABSM - THILLAI NAGAR, TRICHY, Tamil Nadu </option>
+
+                  
+                `;
+      }
+      else if (option === "ASM-2") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                   <option value=" ASM  - VILLIANUR, Puducherry "> ASM  - VILLIANUR, Puducherry </option>
+<option value=" ABSM -THENGAITHETTU, Puducherry "> ABSM -THENGAITHETTU, Puducherry </option>
+<option value=" ASM - MUTHARAYAPALAYAM, Puducherry"> ASM - MUTHARAYAPALAYAM, Puducherry</option>
+<option value=" ABSM - MUTHIALPET, Puducherry "> ABSM - MUTHIALPET, Puducherry </option>
+<option value=" ASM - THAVALAKUPPAM, Puducherry "> ASM - THAVALAKUPPAM, Puducherry </option>
+<option value=" ASM - MOOLAKULAM, Puducherry "> ASM - MOOLAKULAM, Puducherry </option>
+<option value=" ABSM - GORIMEDU, Puducherry "> ABSM - GORIMEDU, Puducherry </option>
+<option value=" ASM - KARAIKAL, Puducherry "> ASM - KARAIKAL, Puducherry </option>
+<option value=" ASM - VILLUPURAM, Tamil Nadu "> ASM - VILLUPURAM, Tamil Nadu </option>
+<option value=" ASM - ALAPAKKAM, Chennai, Tamil Nadu "> ASM - ALAPAKKAM, Chennai, Tamil Nadu </option>
+<option value=" ABSM - VALASARAVAKKAM, Chennai, Tamil Nadu "> ABSM - VALASARAVAKKAM, Chennai, Tamil Nadu </option>
+<option value=" ABSM - PADMANABHA NAGAR, Chennai, Tamil Nadu "> ABSM - PADMANABHA NAGAR, Chennai, Tamil Nadu </option>
+<option value=" ABSM - KK NAGAR, Chennai, Tamil Nadu "> ABSM - KK NAGAR, Chennai, Tamil Nadu </option>
+<option value=" ABSM - TINDIVANAM, Tamil Nadu "> ABSM - TINDIVANAM, Tamil Nadu </option>
+<option value=" AWGI - ETTIMADAI, Coimbatore, Tamil Nadu "> AWGI - ETTIMADAI, Coimbatore, Tamil Nadu </option>
+<option value=" ASM - ERODE (Main branch ), Tamil Nadu "> ASM - ERODE (Main branch ), Tamil Nadu </option>
+<option value=" ABSM - NOLAMBUR, Chennai, Tamil Nadu "> ABSM - NOLAMBUR, Chennai, Tamil Nadu </option>
+<option value=" ASM - TRICHY, Tamil Nadu "> ASM - TRICHY, Tamil Nadu </option>
+
+                  
+                `;
+      }
+      else if (option === "ASM-3") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                   <option value=" ASM  - VILLIANUR, Puducherry "> ASM  - VILLIANUR, Puducherry </option>
+<option value=" ABSM -THENGAITHETTU, Puducherry "> ABSM -THENGAITHETTU, Puducherry </option>
+<option value=" ASM - MUTHARAYAPALAYAM, Puducherry"> ASM - MUTHARAYAPALAYAM, Puducherry</option>
+<option value=" ABSM - MUTHIALPET, Puducherry "> ABSM - MUTHIALPET, Puducherry </option>
+<option value=" ASM - THAVALAKUPPAM, Puducherry "> ASM - THAVALAKUPPAM, Puducherry </option>
+<option value=" ASM - MOOLAKULAM, Puducherry "> ASM - MOOLAKULAM, Puducherry </option>
+<option value=" ABSM - GORIMEDU, Puducherry "> ABSM - GORIMEDU, Puducherry </option>
+<option value=" ASM - KARAIKAL, Puducherry "> ASM - KARAIKAL, Puducherry </option>
+<option value=" ASM - VILLUPURAM, Tamil Nadu "> ASM - VILLUPURAM, Tamil Nadu </option>
+<option value=" ASM - ALAPAKKAM, Chennai, Tamil Nadu "> ASM - ALAPAKKAM, Chennai, Tamil Nadu </option>
+<option value=" ABSM - VALASARAVAKKAM, Chennai, Tamil Nadu "> ABSM - VALASARAVAKKAM, Chennai, Tamil Nadu </option>
+<option value=" ABSM - PADMANABHA NAGAR, Chennai, Tamil Nadu "> ABSM - PADMANABHA NAGAR, Chennai, Tamil Nadu </option>
+<option value=" ABSM - KK NAGAR, Chennai, Tamil Nadu "> ABSM - KK NAGAR, Chennai, Tamil Nadu </option>
+<option value=" ABSM - TINDIVANAM, Tamil Nadu "> ABSM - TINDIVANAM, Tamil Nadu </option>
+<option value=" AWGI - ETTIMADAI, Coimbatore, Tamil Nadu "> AWGI - ETTIMADAI, Coimbatore, Tamil Nadu </option>
+<option value=" ASM - ERODE (Main branch ), Tamil Nadu "> ASM - ERODE (Main branch ), Tamil Nadu </option>
+<option value=" ABSM - NOLAMBUR, Chennai, Tamil Nadu "> ABSM - NOLAMBUR, Chennai, Tamil Nadu </option>
+<option value=" ASM - TRICHY, Tamil Nadu "> ASM - TRICHY, Tamil Nadu </option>
+                  
+                `;
+      }
+      else if (option === "ASM-4") {
+        subOptions.innerHTML = `
+                   <option disabled="disabled" selected="selected"  >Select Location</option>
+               <option value=" ASM  - VILLIANUR, Puducherry "> ASM  - VILLIANUR, Puducherry </option>
+<option value=" ABSM -THENGAITHETTU, Puducherry "> ABSM -THENGAITHETTU, Puducherry </option>
+<option value=" ASM - MUTHARAYAPALAYAM, Puducherry"> ASM - MUTHARAYAPALAYAM, Puducherry</option>
+
+<option value=" ASM - THAVALAKUPPAM, Puducherry "> ASM - THAVALAKUPPAM, Puducherry </option>
+<option value=" ASM - MOOLAKULAM, Puducherry "> ASM - MOOLAKULAM, Puducherry </option>
+<option value=" ABSM - GORIMEDU, Puducherry "> ABSM - GORIMEDU, Puducherry </option>
+<option value=" ASM - KARAIKAL, Puducherry "> ASM - KARAIKAL, Puducherry </option>
+<option value=" ASM - VILLUPURAM, Tamil Nadu "> ASM - VILLUPURAM, Tamil Nadu </option>
+<option value=" ASM - ALAPAKKAM, Chennai, Tamil Nadu "> ASM - ALAPAKKAM, Chennai, Tamil Nadu </option>
+<option value=" ABSM - VALASARAVAKKAM, Chennai, Tamil Nadu "> ABSM - VALASARAVAKKAM, Chennai, Tamil Nadu </option>
+<option value=" ABSM - PADMANABHA NAGAR, Chennai, Tamil Nadu "> ABSM - PADMANABHA NAGAR, Chennai, Tamil Nadu </option>
+<option value=" ABSM - KK NAGAR, Chennai, Tamil Nadu "> ABSM - KK NAGAR, Chennai, Tamil Nadu </option>
+<option value=" ABSM - TINDIVANAM, Tamil Nadu "> ABSM - TINDIVANAM, Tamil Nadu </option>
+<option value=" AWGI - ETTIMADAI, Coimbatore, Tamil Nadu "> AWGI - ETTIMADAI, Coimbatore, Tamil Nadu </option>
+<option value=" ASM - ERODE (Main branch ), Tamil Nadu "> ASM - ERODE (Main branch ), Tamil Nadu </option>
+<option value=" ABSM - NOLAMBUR, Chennai, Tamil Nadu "> ABSM - NOLAMBUR, Chennai, Tamil Nadu </option>
+<option value=" ASM - TRICHY, Tamil Nadu "> ASM - TRICHY, Tamil Nadu </option>
+                  
+                `;
+      }
+      else if (option === "ASM-5") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                   <option value=" ASM  - VILLIANUR, Puducherry "> ASM  - VILLIANUR, Puducherry </option>
+<option value=" ABSM -THENGAITHETTU, Puducherry "> ABSM -THENGAITHETTU, Puducherry </option>
+<option value=" ASM - THAVALAKUPPAM, Puducherry "> ASM - THAVALAKUPPAM, Puducherry </option>
+<option value=" ASM - MOOLAKULAM, Puducherry "> ASM - MOOLAKULAM, Puducherry </option>
+<option value=" ABSM - GORIMEDU, Puducherry "> ABSM - GORIMEDU, Puducherry </option>
+<option value=" ASM - KARAIKAL, Puducherry "> ASM - KARAIKAL, Puducherry </option>
+<option value=" ASM - VILLUPURAM, Tamil Nadu "> ASM - VILLUPURAM, Tamil Nadu </option>
+<option value=" ASM - ALAPAKKAM, Chennai, Tamil Nadu "> ASM - ALAPAKKAM, Chennai, Tamil Nadu </option>
+<option value=" ABSM - VALASARAVAKKAM, Chennai, Tamil Nadu "> ABSM - VALASARAVAKKAM, Chennai, Tamil Nadu </option>
+<option value=" ABSM - PADMANABHA NAGAR, Chennai, Tamil Nadu "> ABSM - PADMANABHA NAGAR, Chennai, Tamil Nadu </option>
+<option value=" ABSM - KK NAGAR, Chennai, Tamil Nadu "> ABSM - KK NAGAR, Chennai, Tamil Nadu </option>
+<option value=" ABSM - TINDIVANAM, Tamil Nadu "> ABSM - TINDIVANAM, Tamil Nadu </option>
+<option value=" AWGI - ETTIMADAI, Coimbatore, Tamil Nadu "> AWGI - ETTIMADAI, Coimbatore, Tamil Nadu </option>
+<option value=" ASM - ERODE (Main branch ), Tamil Nadu "> ASM - ERODE (Main branch ), Tamil Nadu </option>
+<option value=" ABSM - NOLAMBUR, Chennai, Tamil Nadu "> ABSM - NOLAMBUR, Chennai, Tamil Nadu </option>
+<option value=" ASM - TRICHY, Tamil Nadu "> ASM - TRICHY, Tamil Nadu </option>
+                  
+                `;
+      }
+      else if (option === "ASM-6") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                   <option value=" ASM  - VILLIANUR, Puducherry "> ASM  - VILLIANUR, Puducherry </option>
+<option value=" ABSM -THENGAITHETTU, Puducherry "> ABSM -THENGAITHETTU, Puducherry </option>
+<option value=" ASM - THAVALAKUPPAM, Puducherry "> ASM - THAVALAKUPPAM, Puducherry </option>
+<option value=" ASM - MOOLAKULAM, Puducherry "> ASM - MOOLAKULAM, Puducherry </option>
+<option value=" ASM - KARAIKAL, Puducherry "> ASM - KARAIKAL, Puducherry </option>
+<option value=" ASM - VILLUPURAM, Tamil Nadu "> ASM - VILLUPURAM, Tamil Nadu </option>
+<option value=" ASM - ALAPAKKAM, Chennai, Tamil Nadu "> ASM - ALAPAKKAM, Chennai, Tamil Nadu </option>
+<option value=" AWGI - ETTIMADAI, Coimbatore, Tamil Nadu "> AWGI - ETTIMADAI, Coimbatore, Tamil Nadu </option>
+<option value=" ASM - ERODE (Main branch ), Tamil Nadu "> ASM - ERODE (Main branch ), Tamil Nadu </option>
+<option value=" ASM - TRICHY, Tamil Nadu "> ASM - TRICHY, Tamil Nadu </option>
+                  
+                `;
+      }
+      else if (option === "ASM-7") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                   <option value=" ASM  - VILLIANUR, Puducherry "> ASM  - VILLIANUR, Puducherry </option>
+<option value=" ABSM -THENGAITHETTU, Puducherry "> ABSM -THENGAITHETTU, Puducherry </option>
+<option value=" ASM - THAVALAKUPPAM, Puducherry "> ASM - THAVALAKUPPAM, Puducherry </option>
+<option value=" ASM - MOOLAKULAM, Puducherry "> ASM - MOOLAKULAM, Puducherry </option>
+<option value=" ASM - KARAIKAL, Puducherry "> ASM - KARAIKAL, Puducherry </option>
+<option value=" ASM - VILLUPURAM, Tamil Nadu "> ASM - VILLUPURAM, Tamil Nadu </option>
+<option value=" ASM - ALAPAKKAM, Chennai, Tamil Nadu "> ASM - ALAPAKKAM, Chennai, Tamil Nadu </option>
+<option value=" AWGI - ETTIMADAI, Coimbatore, Tamil Nadu "> AWGI - ETTIMADAI, Coimbatore, Tamil Nadu </option>
+<option value=" ASM - ERODE (Main branch ), Tamil Nadu "> ASM - ERODE (Main branch ), Tamil Nadu </option>
+<option value=" ASM - TRICHY, Tamil Nadu "> ASM - TRICHY, Tamil Nadu </option>
+                  
+                `;
+      }
+      else if (option === "ASM-8") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                               <option disabled="disabled" selected="selected"  >Select Location</option>
+                   <option value=" ASM  - VILLIANUR, Puducherry "> ASM  - VILLIANUR, Puducherry </option>
+<option value=" ABSM -THENGAITHETTU, Puducherry "> ABSM -THENGAITHETTU, Puducherry </option>
+<option value=" ASM - THAVALAKUPPAM, Puducherry "> ASM - THAVALAKUPPAM, Puducherry </option>
+<option value=" ASM - MOOLAKULAM, Puducherry "> ASM - MOOLAKULAM, Puducherry </option>
+<option value=" ASM - KARAIKAL, Puducherry "> ASM - KARAIKAL, Puducherry </option>
+<option value=" ASM - VILLUPURAM, Tamil Nadu "> ASM - VILLUPURAM, Tamil Nadu </option>
+<option value=" ASM - ALAPAKKAM, Chennai, Tamil Nadu "> ASM - ALAPAKKAM, Chennai, Tamil Nadu </option>
+<option value=" AWGI - ETTIMADAI, Coimbatore, Tamil Nadu "> AWGI - ETTIMADAI, Coimbatore, Tamil Nadu </option>
+<option value=" ASM - ERODE (Main branch ), Tamil Nadu "> ASM - ERODE (Main branch ), Tamil Nadu </option>
+<option value=" ASM - TRICHY, Tamil Nadu "> ASM - TRICHY, Tamil Nadu </option>
+                  
+                `;
+      }
+      else if (option === "ASM-9") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value=" ASM  - VILLIANUR, Puducherry "> ASM  - VILLIANUR, Puducherry </option>
+<option value=" ABSM -THENGAITHETTU, Puducherry "> ABSM -THENGAITHETTU, Puducherry </option>
+<option value=" ASM - KARAIKAL, Puducherry "> ASM - KARAIKAL, Puducherry </option>
+<option value=" ASM - VILLUPURAM, Tamil Nadu "> ASM - VILLUPURAM, Tamil Nadu </option>
+<option value=" ASM - ALAPAKKAM, Chennai, Tamil Nadu "> ASM - ALAPAKKAM, Chennai, Tamil Nadu </option>
+<option value=" AWGI - ETTIMADAI, Coimbatore, Tamil Nadu "> AWGI - ETTIMADAI, Coimbatore, Tamil Nadu </option>
+<option value=" ASM - ERODE (Main branch ), Tamil Nadu "> ASM - ERODE (Main branch ), Tamil Nadu </option>
+<option value=" ASM - TRICHY, Tamil Nadu "> ASM - TRICHY, Tamil Nadu </option>
+                  
+                `;
+      }
+      else if (option === "ASM-10") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                   <option value=" ASM  - VILLIANUR, Puducherry "> ASM  - VILLIANUR, Puducherry </option>
+<option value=" ABSM -THENGAITHETTU, Puducherry "> ABSM -THENGAITHETTU, Puducherry </option>
+<option value=" ASM - KARAIKAL, Puducherry "> ASM - KARAIKAL, Puducherry </option>
+<option value=" ASM - VILLUPURAM, Tamil Nadu "> ASM - VILLUPURAM, Tamil Nadu </option>
+<option value=" ASM - ALAPAKKAM, Chennai, Tamil Nadu "> ASM - ALAPAKKAM, Chennai, Tamil Nadu </option>
+<option value=" AWGI - ETTIMADAI, Coimbatore, Tamil Nadu "> AWGI - ETTIMADAI, Coimbatore, Tamil Nadu </option>
+<option value=" ASM - ERODE (Main branch ), Tamil Nadu "> ASM - ERODE (Main branch ), Tamil Nadu </option>
+
+                  
+                `;
+      }
+      else if (option === "ASM-11") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                  <option value=" ASM  - VILLIANUR, Puducherry "> ASM  - VILLIANUR, Puducherry </option>
+<option value=" ABSM -THENGAITHETTU, Puducherry "> ABSM -THENGAITHETTU, Puducherry </option>
+<option value=" ASM - KARAIKAL, Puducherry "> ASM - KARAIKAL, Puducherry </option>
+<option value=" AWGI - ETTIMADAI, Coimbatore, Tamil Nadu "> AWGI - ETTIMADAI, Coimbatore, Tamil Nadu </option>
+<option value=" ASM - ERODE (Main branch ), Tamil Nadu "> ASM - ERODE (Main branch ), Tamil Nadu </option>
+                  
+                `;
+      }
+      else if (option === "ASM-12") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value=" ASM  - VILLIANUR, Puducherry "> ASM  - VILLIANUR, Puducherry </option>
+<option value=" ABSM -THENGAITHETTU, Puducherry "> ABSM -THENGAITHETTU, Puducherry </option>
+<option value=" ASM - KARAIKAL, Puducherry "> ASM - KARAIKAL, Puducherry </option>
+<option value=" AWGI - ETTIMADAI, Coimbatore, Tamil Nadu "> AWGI - ETTIMADAI, Coimbatore, Tamil Nadu </option>
+<option value=" ASM - ERODE (Main branch ), Tamil Nadu "> ASM - ERODE (Main branch ), Tamil Nadu </option>
+                  
+                `;
+      } else if (option === "SSV-mont-1") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value="Sri Sampourna Vidyalayam - VILLIANUR, Puducherry">Sri Sampourna Vidyalayam - VILLIANUR, Puducherry</option>
+                  
+                `;
+      }
+      else if (option === "SSV-mont-2") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value="Sri Sampourna Vidyalayam - VILLIANUR, Puducherry">Sri Sampourna Vidyalayam - VILLIANUR, Puducherry</option>
+                  
+                `;
+      }
+      else if (option === "SSV-1") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value="Sri Sampourna Vidyalayam - VILLIANUR, Puducherry">Sri Sampourna Vidyalayam - VILLIANUR, Puducherry</option>
+                  
+                `;
+      }
+      else if (option === "SSV-2") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value="Sri Sampourna Vidyalayam - VILLIANUR, Puducherry">Sri Sampourna Vidyalayam - VILLIANUR, Puducherry</option>
+                  
+                `;
+      }
+      else if (option === "SSV-3") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value="Sri Sampourna Vidyalayam - VILLIANUR, Puducherry">Sri Sampourna Vidyalayam - VILLIANUR, Puducherry</option>
+                  
+                `;
+      }
+      else if (option === "SSV-4") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value="Sri Sampourna Vidyalayam - VILLIANUR, Puducherry">Sri Sampourna Vidyalayam - VILLIANUR, Puducherry</option>
+                  
+                `;
+      }
+      else if (option === "SSV-5") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value="Sri Sampourna Vidyalayam - VILLIANUR, Puducherry">Sri Sampourna Vidyalayam - VILLIANUR, Puducherry</option>
+                  
+                `;
+      }
+      else if (option === "SSV-6") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value="Sri Sampourna Vidyalayam - VILLIANUR, Puducherry">Sri Sampourna Vidyalayam - VILLIANUR, Puducherry</option>
+                  
+                `;
+      }
+      else if (option === "SSV-7") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value="Sri Sampourna Vidyalayam - VILLIANUR, Puducherry">Sri Sampourna Vidyalayam - VILLIANUR, Puducherry</option>
+                  
+                `;
+      }
+      else if (option === "SSV-8") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value="Sri Sampourna Vidyalayam - VILLIANUR, Puducherry">Sri Sampourna Vidyalayam - VILLIANUR, Puducherry</option>
+                  
+                `;
+      }
+      else if (option === "SSV-9") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value="Sri Sampourna Vidyalayam - VILLIANUR, Puducherry">Sri Sampourna Vidyalayam - VILLIANUR, Puducherry</option>
+                  
+                `;
+      }
+      else if (option === "SSV-10") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value="Sri Sampourna Vidyalayam - VILLIANUR, Puducherry">Sri Sampourna Vidyalayam - VILLIANUR, Puducherry</option>
+                  
+                `;
+      }
+      else if (option === "SSV-11") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value="Sri Sampourna Vidyalayam - VILLIANUR, Puducherry">Sri Sampourna Vidyalayam - VILLIANUR, Puducherry</option>
+                    <option value=" ASM  - VILLIANUR, Puducherry "> ASM  - VILLIANUR, Puducherry </option>
+                  
+                `;
+      }
+      else if (option === "SSV-12") {
+        subOptions.innerHTML = `
+                <option disabled="disabled" selected="selected"  >Select Location</option>
+                    <option value="Sri Sampourna Vidyalayam - VILLIANUR, Puducherry">Sri Sampourna Vidyalayam - VILLIANUR, Puducherry</option>
+                    <option value=" ASM  - VILLIANUR, Puducherry "> ASM  - VILLIANUR, Puducherry </option>
+                  
+                `;
+      }
+    }
+  </script>
+  <script>
+    document.getElementById("admissionForm").addEventListener("submit", function (e) {
+      e.preventDefault();  // stop form submission
+
+      // Show popup
+      document.getElementById("successPopup").style.display = "flex";
+
+      // Auto redirect after 2 seconds
+      setTimeout(function () {
+        window.location.href = "https://achariya.in/";
+      }, 500);
+    });
+
+    // Close popup manually
+    function closePopup() {
+      document.getElementById("successPopup").style.display = "none";
+    }
+  </script>
 
 </body>
-</html>  
 
-
-
-
-
-
-
+</html>

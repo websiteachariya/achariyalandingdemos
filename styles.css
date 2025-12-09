@@ -12,7 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
 }
 
 .logo {
@@ -55,10 +55,21 @@
    TABLET (≤ 768px)
 ============================== */
 @media (max-width: 768px) {
-  .logo { height: 70px; }
-  .header-right { gap: 18px; }
-  .contactlink { font-size: 14px; }
-  .social-icons i { font-size: 18px; }
+  .logo {
+    height: 70px;
+  }
+
+  .header-right {
+    gap: 18px;
+  }
+
+  .contactlink {
+    font-size: 14px;
+  }
+
+  .social-icons i {
+    font-size: 18px;
+  }
 }
 
 
@@ -105,9 +116,17 @@
    SMALL MOBILE (≤ 375px)
 ============================== */
 @media (max-width: 375px) {
-  .contactlink { font-size: 12px; }
-  .header-right { gap: 8px; }
-  .social-icons i { font-size: 17px; }
+  .contactlink {
+    font-size: 12px;
+  }
+
+  .header-right {
+    gap: 8px;
+  }
+
+  .social-icons i {
+    font-size: 17px;
+  }
 }
 
 
@@ -115,10 +134,21 @@
    ULTRA SMALL (≤ 320px)
 ============================== */
 @media (max-width: 320px) {
-  .logo { height: 62px; }
-  .contactlink { font-size: 11px; }
-  .header-right { gap: 6px; }
-  .social-icons { padding-right: 4.5px; }
+  .logo {
+    height: 62px;
+  }
+
+  .contactlink {
+    font-size: 11px;
+  }
+
+  .header-right {
+    gap: 6px;
+  }
+
+  .social-icons {
+    padding-right: 4.5px;
+  }
 }
 
 
@@ -173,31 +203,34 @@
 /* ----------------------------
    ROOT COLORS
 ----------------------------- */
-:root{
-  --maroon:#6a0b38;
-  --dark-blue:#083b63;
-  --teal:#0d83ad;
-  --gold:#c7a217;
-  --orange:#d45e1a;
-  --red:#A80101;
+:root {
+  --maroon: #6a0b38;
+  --dark-blue: #083b63;
+  --teal: #0d83ad;
+  --gold: #c7a217;
+  --orange: #d45e1a;
+  --red: #A80101;
 }
 
-body{
+body {
   font-family: 'Poppins', sans-serif;
   background-color: #ffffff;
 }
 
 
 .top-announcement {
-  background: #FFD200; /* bright yellow */
-  color: #000;         /* black text */
-  font-weight: 700;    /* bold */
+  background: #FFD200;
+  /* bright yellow */
+  color: #000;
+  /* black text */
+  font-weight: 700;
+  /* bold */
   text-align: center;
   padding: 10px 20px;
   font-size: 18px;
   line-height: 1.4;
   font-family: 'Poppins', sans-serif;
-  
+
 }
 
 /* Mobile Responsive */
@@ -214,6 +247,7 @@ body{
     padding: 6px 10px;
   }
 }
+
 @media (max-width: 425px) {
   .top-announcement {
     font-size: 13px;
@@ -254,224 +288,643 @@ body{
 }
 
 .contactlink {
-    padding: 5px 8px;     /* increases hover area */
-    display: inline-block;
-    border-radius: 4px;   /* optional */
-    text-decoration: none;
+  padding: 5px 8px;
+  /* increases hover area */
+  display: inline-block;
+  border-radius: 4px;
+  /* optional */
+  text-decoration: none;
 }
 
 .contactlink:hover {
-    text-decoration: underline ;
-    text-decoration-color: #fff;
-    text-underline-offset: 8px;
+  text-decoration: underline;
+  text-decoration-color: #fff;
+  text-underline-offset: 8px;
 }
 
 /* ----------------------------
    HERO IMAGE
 ----------------------------- */
-/* IMAGE */
+
+/* =====================================================
+   HERO IMAGE
+   (Visible ONLY on tablet + mobile)
+===================================================== */
+
 .hero-img {
   width: 100%;
   height: auto;
+  border-radius: 15px;
   object-fit: cover;
-  border-radius: 15px;
 }
 
-/* -----------------------------------
-   FORM CARD - DESKTOP
------------------------------------- */
+
+
+/* =====================================================
+   FORM CARD (WOW Academy Red Theme)
+===================================================== */
+
 .form-card {
-  background: #ffffff;
+  background: #fff;
   border-radius: 15px;
-  overflow: hidden; /* VERY IMPORTANT for clean corners */
-  display: flex;
-  flex-direction: column;
   border-bottom: 3px solid #A80101;
+  overflow: hidden;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
 }
 
-/* HEADER */
 .form-header {
   background: #A80101;
-  color: #ffffff;
+  color: #fff;
   padding: 15px 20px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
-  width: 100%; /* ensure full stretch */
-  display: block; /* behaves like a bar, not button */
-  margin: 0; /* remove gaps */
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-
+  text-align: center;
 }
-/* BODY */
+
 .form-body {
-  padding: 20px;
-  background: #fff;
-  flex-grow: 1;
+  padding: 22px;
 }
 
+
+
+/* =====================================================
+   INPUT + SELECT (WOW Academy light red pastel style)
+===================================================== */
+
+.form-control,
 .form-select {
+  background: #FFF4F4;
+  /* light red box */
+  border: 2px solid #FFC6C6;
+  /* light-red border */
+  border-radius: 10px;
+  padding: 12px 14px;
   font-size: 16px;
-  padding: 10px 12px;
+  font-weight: 500;
+  transition: 0.25s ease;
 }
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #FF4B4B;
+  /* darker red focus */
+  background: #FFECEC;
+  box-shadow: 0 0 8px rgba(255, 75, 75, 0.3);
+}
+
+
+
+/* =====================================================
+   REGISTER BUTTON
+===================================================== */
 
 .register-btn {
-  background: #A80101 !important;
-  color: #fff !important;
-  border: none;
+  background: #A80101;
   border-radius: 8px;
-  padding: 8px 18px;        /* button height + width */
-  font-size: 15px;
+  padding: 10px 26px;
+  font-size: 18px;
   font-weight: 600;
-  width: auto;              /* makes it small */
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  transition: 0.3s ease;
-  align-self: center;       /* centers inside form */
-  margin: 10px 0 20px 0;    /* spacing */
+  color: #fff;
+  width: fit-content;
+  display: block;
+  margin: 0 auto 25px auto;
+  transition: 0.25s;
 }
 
-/* Hover (desktop only) */
 .register-btn:hover {
-  background: #8a0202 !important;
-  transform: translateY(-2px);
+  background: #7e0101;
 }
 
-/* Tablet */
-@media (max-width: 768px) {
-  .register-btn {
-    padding: 7px 16px;
-    font-size: 14px;
-  }
-}
 
-/* Mobile 320px */
-@media (max-width: 480px) {
-  .register-btn {
-    padding: 6px 14px;
-    font-size: 13px;
-    border-radius: 6px;
-  }
-}
 
-/* NORMAL SIZE (desktop + tablet) */
-.country-code {
-  max-width: 110px;
-}
+/* =====================================================
+   RESPONSIVE SETTINGS
+   TABLET + MOBILE (max-width: 1000px)
+===================================================== */
 
-/* MOBILE FIX — 320px */
-@media (max-width: 480px) {
-  .country-code {
-    max-width: 70px !important;   /* smaller on mobile */
-    padding: 6px 4px;             /* reduce height slightly */
-    font-size: 14px;
+@media (max-width: 1000px) {
+
+  /* SHOW IMAGE on tablet + mobile */
+  .col-lg-7 {
+    display: block !important;
   }
 
-  .mobile-input {
-    padding: 8px 10px;            /* comfortable input */
-    font-size: 15px;
-  }
-
-  .d-flex.gap-2 {
-    gap: 8px !important;          /* reduce gap spacing */
-  }
-}
-
-/* NORMAL DESKTOP SIZE */
-.board-select,
-.grade-select {
-  font-size: 16px;
-  padding: 10px 12px;
-}
-
-/* MOBILE FIX — 480px & below */
-@media (max-width: 480px) {
-
-  .board-select,
-  .grade-select {
-    width: 100% !important;     /* full width on mobile */
-    font-size: 14px;
-    padding: 8px;
-  }
-
-  /* Change column layout to stacked on mobile */
-  .row.g-2 .col-6 {
+  /* FORM full-width */
+  .col-lg-5 {
     width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .form-header {
+    font-size: 20px;
+  }
+
+  .form-control,
+  .form-select {
+    font-size: 15px;
+    padding: 10px 12px;
+  }
+
+  .register-btn {
+    font-size: 16px;
+    padding: 9px 22px;
+  }
+}
+
+
+
+/* =====================================================
+   DESKTOP MODE (min-width: 1000px)
+   - Image hidden
+   - Form centered
+   - Perfect 480px width
+===================================================== */
+
+@media (min-width: 1000px) {
+
+  /* HIDE IMAGE ON DESKTOP */
+  .col-lg-7 {
+    display: none !important;
+  }
+
+  /* Form column becomes centered full-width wrapper */
+  .col-lg-5 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  /* Center the actual form */
+  .form-card {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .form-header {
+    font-size: 24px;
+  }
+}
+
+
+
+/* =====================================================
+   SMALL MOBILE FIXES (max-width: 480px)
+===================================================== */
+
+@media (max-width: 480px) {
+
+  .form-header {
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  .form-control,
+  .form-select {
+    font-size: 14px;
+    padding: 9px 12px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  .register-btn {
+    font-size: 15px;
+    padding: 8px 18px;
+  }
+}
+
+/* Fix: Inputs showing white background while typing */
+.form-control {
+  background-color: #FFF4F4 !important;
+}
+
+/* Fix autofill (Chrome, Edge, Brave) */
+.form-control:-webkit-autofill {
+  background-color: #FFF4F4 !important;
+  -webkit-box-shadow: 0 0 0 50px #FFF4F4 inset !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+/* Keep focus state consistent */
+.form-control:focus {
+  background-color: #FFECEC !important;
+}
+
+
+
+/* =====================================================
+   OPTION TEXT (Standard & Campus Location)
+   Make options responsive & readable on all devices
+===================================================== */
+
+/* Base option size for desktop */
+.form-select option {
+  font-size: 16px;
+  padding: 8px;
+}
+
+/* Tablet size */
+@media (max-width: 1000px) {
+  .form-select option {
+    font-size: 15px;
+    padding: 7px;
+  }
+}
+
+/* Mobile size */
+@media (max-width: 480px) {
+  .form-select option {
+    font-size: 14px;
+    padding: 6px;
+    line-height: 1.2;
+  }
+}
+
+/* Prevent long text overflow inside dropdown */
+.form-select {
+  white-space: normal !important;
+}
+
+
+
+
+/* ============================
+   RESPONSIVE DROPDOWN FIX
+============================ */
+
+/* Base styling for all devices */
+#subOptions {
+  max-height: 220px;
+  /* more height for desktop */
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #A80101 #FFF4F4;
+}
+
+/* Chrome Scrollbar */
+#subOptions::-webkit-scrollbar {
+  width: 6px;
+}
+
+#subOptions::-webkit-scrollbar-thumb {
+  background: #A80101;
+  border-radius: 5px;
+}
+
+#subOptions::-webkit-scrollbar-track {
+  background: #FFECEC;
+}
+
+/* ======================================================
+   OPTIMIZED DROPDOWN FOR <700px DEVICES
+====================================================== */
+/* ======================================================
+   OPTIMIZED DROPDOWN FOR <700px DEVICES
+   (Standardized Font Size)
+====================================================== */
+@media (max-width: 600px) {
+
+  #options,
+  #subOptions {
+    /* Kept compatible padding, but standardized font size */
+    padding: 8px 10px !important;
+    width: 100% !important;
+  }
+
+  #subOptions {
+    max-height: 150px !important;
+    overflow-y: auto !important;
+  }
+
+  /* Unified font sizes */
+  #options option,
+  #subOptions option {
+    font-size: 14px !important;
+    /* Standardized Mobile Size */
+    padding: 6px 8px !important;
+    white-space: normal !important;
+    line-height: 1.3 !important;
+  }
+
+  #subOptions::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  #subOptions::-webkit-scrollbar-thumb {
+    background: #A80101;
+    border-radius: 4px;
+  }
+}
+
+/* ======================================================
+   GLOBAL COMPACT DROPDOWN STYLE (ALL DEVICES)
+====================================================== */
+
+/* ======================================================
+   GLOBAL COMPACT DROPDOWN STYLE (ALL DEVICES)
+====================================================== */
+
+/* Main select box size - Unified */
+#options,
+#subOptions {
+  /* Inherit main form-control size or explicit standard */
+  /* font-size: 16px;  <-- Handled by general .form-select rule now */
+  padding: 8px 10px !important;
+  width: 100% !important;
+  border-radius: 10px !important;
+}
+
+/* Dropdown list (inside) */
+#subOptions {
+  max-height: 180px !important;
+  overflow-y: auto !important;
+}
+
+/* Option items - Unified */
+#options option,
+#subOptions option {
+  /* font-size: 16px; <-- Handled by general option rule */
+  padding: 8px 10px !important;
+  /* increased padding for clickability */
+  white-space: normal !important;
+  line-height: 1.3 !important;
+}
+
+/* Scrollbar clean */
+#subOptions::-webkit-scrollbar {
+  width: 4px;
+}
+
+#subOptions::-webkit-scrollbar-thumb {
+  background: #A80101;
+  border-radius: 4px;
+}
+
+/* ======================================================
+   EXTRA SMALL DEVICES (Below 380px)
+====================================================== */
+/* ======================================================
+   EXTRA SMALL DEVICES (Below 380px)
+   (Standardized Font Size)
+====================================================== */
+@media (max-width: 380px) {
+
+  /* Keep padding consistent but don't shrink font too much */
+  #options,
+  #subOptions {
+    /* font-size: 14px !important; <-- Handled by mobile rule */
+    padding: 8px 10px !important;
+  }
+
+  /* Reduce dropdown height */
+  #subOptions {
+    max-height: 130px !important;
+  }
+
+  /* Option text */
+  #options option,
+  #subOptions option {
+    font-size: 14px !important;
+    /* Consistent with other mobile inputs */
+    padding: 8px 10px !important;
+    line-height: 1.2 !important;
+  }
+
+  /* Scrollbar smaller */
+  #subOptions::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  #subOptions::-webkit-scrollbar-thumb {
+    background: #A80101;
+    border-radius: 4px;
+  }
+}
+
+/* ============================
+   Reduce dropdown size < 400px
+=============================== */
+@media (max-width: 400px) {
+
+  #grade,
+  #options,
+  #subOptions {
+    /* font-size: 14px !important; <-- Unified */
+    padding: 10px !important;
+    /* Standard mobile padding */
+    /* height auto-sized by padding/content */
+  }
+
+  label.fw-semibold {
+    font-size: 14px !important;
+    /* Consistent label size */
+  }
+}
+
+@media (max-width: 400px) {
+
+  /* Reduce the visible select box - UNIFIED SIZE */
+  #grade,
+  #options,
+  #subOptions {
+    width: 100% !important;
+    max-width: 100% !important;
+    /* Allow full width */
+    font-size: 14px !important;
+    /* Unified Mobile Size */
+    padding: 10px 12px !important;
+    /* Good touch target */
+  }
+
+  /* Reduce dropdown (opened list) width */
+  select.form-select {
+    max-width: 100% !important;
+    white-space: normal !important;
+    /* Ensure wrapping */
+  }
+}
+
+/* Stronger mobile select rules */
+@media (max-width: 400px) {
+  .select-wrapper {
+    width: 100%;
+    max-width: 300px;
+    /* set desired max width */
+    box-sizing: border-box;
+  }
+
+  .select-wrapper select,
+  .select-wrapper .form-select {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    /* remove browser min */
+    box-sizing: border-box !important;
+    display: block !important;
+    font-size: 14px !important;
+    /* Unified Mobile Size */
+    padding: 10px 12px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+  }
+
+  /* Try to allow wrapping inside options (browser dependent) */
+  .select-wrapper select option {
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+  }
+}
+
+/* Fix select width ONLY on mobile */
+@media (max-width: 400px) {
+
+  select.form-select {
+    width: 100% !important;
+    max-width: 100% !important;
+    /* Allow full width */
+    font-size: 14px !important;
+    /* Unified Mobile Size */
+    padding: 10px 12px !important;
+    white-space: normal !important;
+  }
+
+  /* This controls the dropdown popup width */
+  select.form-select:focus {
+    max-width: 100% !important;
+  }
+
+  select.form-select option {
+    white-space: normal !important;
+    word-wrap: break-word !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .location-wrapper {
+    width: 230px !important;
+    /* reduce size as you want */
+    margin: 0 auto;
+    /* center on mobile */
+  }
+
+  .location-wrapper select {
+    width: 100% !important;
+    /* select follows wrapper width */
+    max-width: 100% !important;
+    font-size: 13px !important;
+    padding: 6px 10px !important;
   }
 }
 
 /* ----------------------------
    RIBBONS
 ----------------------------- */
-.ribbon-row{
-  display:flex;
-  flex-wrap:wrap;
-  gap:15px;
-  justify-content:center;
-  margin-top:40px;
+.ribbon-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 40px;
 }
 
-.ribbon{
-  width:170px;
-  min-height:170px;
-  color:#fff;
-  padding:20px 14px 30px;
-  border-radius:10px;
-  position:relative;
-  text-align:center;
-  box-shadow:0 6px 18px rgba(0,0,0,0.12);
-  transition:.35s;
-    font-family: 'Poppins', sans-serif;
+.ribbon {
+  width: 170px;
+  min-height: 170px;
+  color: #fff;
+  padding: 20px 14px 30px;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transition: .35s;
+  font-family: 'Poppins', sans-serif;
 
 }
 
-.ribbon:hover{
-  transform:translateY(-8px);
-  box-shadow:0 18px 36px rgba(0,0,0,0.16);
+.ribbon:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.16);
 }
 
 /* Ribbon top bar */
-.ribbon::before{
-  content:"";
-  position:absolute;
-  top:-15px;
-  left:-8px;
-  right:-8px;
-  height:12px;
+.ribbon::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -8px;
+  right: -8px;
+  height: 12px;
   /* background:linear-gradient(90deg,#bbb,#8b8b8b,#e5e5e5); */
-  border-radius:6px;
+  border-radius: 6px;
 }
 
 /* Ribbon bottom tail */
-.ribbon::after{
-  content:"";
-  position:absolute;
-  bottom:-28px;
-  left:50%;
-  transform:translateX(-50%);
-  border-left:20px solid transparent;
-  border-right:20px solid transparent;
-  border-top:28px solid rgba(0,0,0,0.08);
+.ribbon::after {
+  content: "";
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 28px solid rgba(0, 0, 0, 0.08);
 }
 
-.ribbon .tail{
-  position:absolute;
-  bottom:-28px;
-  left:50%;
-  transform:translateX(-50%);
-  border-left:20px solid transparent;
-  border-right:20px solid transparent;
-  border-top:28px solid currentColor;
+.ribbon .tail {
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 28px solid currentColor;
 }
 
 /* Ribbon colors */
-.c1{background:var(--dark-blue);} .c1 .tail{color:#062f4d;}
-.c2{background:var(--teal);} .c2 .tail{color:#0a6a85;}
-.c3{background:var(--gold);} .c3 .tail{color:#a88d0e;}
-.c4{background:var(--orange);} .c4 .tail{color:#b34914;}
-.c5{background:var(--red);} .c5 .tail{color:#7f1515;}
+.c1 {
+  background: var(--dark-blue);
+}
+
+.c1 .tail {
+  color: #062f4d;
+}
+
+.c2 {
+  background: var(--teal);
+}
+
+.c2 .tail {
+  color: #0a6a85;
+}
+
+.c3 {
+  background: var(--gold);
+}
+
+.c3 .tail {
+  color: #a88d0e;
+}
+
+.c4 {
+  background: var(--orange);
+}
+
+.c4 .tail {
+  color: #b34914;
+}
+
+.c5 {
+  background: var(--red);
+}
+
+.c5 .tail {
+  color: #7f1515;
+}
 
 /* Responsive ribbons */
 @media (max-width: 768px) {
@@ -492,15 +945,15 @@ body{
 /* ----------------------------
    SCROLL REVEAL
 ----------------------------- */
-.reveal{
-  opacity:0;
-  transform:translateY(25px);
-  transition:all .8s ease;
+.reveal {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: all .8s ease;
 }
 
-.reveal.in-view{
-  opacity:1;
-  transform:translateY(0);
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Button style */
@@ -522,6 +975,7 @@ body{
   .main-title {
     font-size: 30px;
   }
+
   .content-text {
     font-size: 15px;
   }
@@ -532,7 +986,7 @@ body{
 .stats-wrapper {
   background: #ffffff;
   border-radius: 20px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.10);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.10);
   padding: 40px;
   display: flex;
   justify-content: space-between;
@@ -556,9 +1010,17 @@ body{
 
 /* Floating Animation */
 @keyframes float {
-  0%   { transform: translateY(0px); }
-  50%  { transform: translateY(-8px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 /* Icon Circle */
@@ -566,7 +1028,7 @@ body{
   width: 85px;
   height: 85px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.35);
+  background: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(4px);
   display: flex;
   align-items: center;
@@ -603,12 +1065,15 @@ body{
 .card-1 {
   background: linear-gradient(135deg, #FDEB71, #F8D800);
 }
+
 .card-2 {
   background: linear-gradient(135deg, #A18CD1, #FBC2EB);
 }
+
 .card-3 {
   background: linear-gradient(135deg, #96F7D2, #1FC5A8);
 }
+
 .card-4 {
   background: linear-gradient(135deg, #FECFEF, #FF9ACF);
 }
@@ -619,15 +1084,26 @@ body{
 
 .stat-card:hover {
   transform: translateY(-15px) scale(1.03);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.25);
-  border-color: rgba(255,255,255,0.9);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+  border-color: rgba(255, 255, 255, 0.9);
 }
 
 /* Glow per card */
-.card-1:hover { box-shadow: 0 20px 45px rgba(248, 195, 0, 0.55); }
-.card-2:hover { box-shadow: 0 20px 45px rgba(142, 45, 226, 0.55); }
-.card-3:hover { box-shadow: 0 20px 45px rgba(15, 191, 160, 0.55); }
-.card-4:hover { box-shadow: 0 20px 45px rgba(255, 79, 165, 0.55); }
+.card-1:hover {
+  box-shadow: 0 20px 45px rgba(248, 195, 0, 0.55);
+}
+
+.card-2:hover {
+  box-shadow: 0 20px 45px rgba(142, 45, 226, 0.55);
+}
+
+.card-3:hover {
+  box-shadow: 0 20px 45px rgba(15, 191, 160, 0.55);
+}
+
+.card-4:hover {
+  box-shadow: 0 20px 45px rgba(255, 79, 165, 0.55);
+}
 
 /* Icon Bounce */
 .stat-card:hover .icon {
@@ -636,9 +1112,17 @@ body{
 }
 
 @keyframes bounce {
-  0%   { transform: scale(1) translateY(0); }
-  50%  { transform: scale(1.3) translateY(-6px); }
-  100% { transform: scale(1.25) translateY(-4px); }
+  0% {
+    transform: scale(1) translateY(0);
+  }
+
+  50% {
+    transform: scale(1.3) translateY(-6px);
+  }
+
+  100% {
+    transform: scale(1.25) translateY(-4px);
+  }
 }
 
 /* Icon Circle becomes white */
@@ -654,21 +1138,32 @@ body{
 
 /* RESPONSIVE */
 @media (max-width: 992px) {
-  .stat-card { flex: 1 1 calc(50% - 20px); }
+  .stat-card {
+    flex: 1 1 calc(50% - 20px);
+  }
 }
 
 @media (max-width: 768px) {
-  .stat-card { flex: 0 0 100%; }
+  .stat-card {
+    flex: 0 0 100%;
+  }
 }
 
 @media (max-width: 480px) {
-  .icon-circle { width: 70px; height: 70px; }
-  .icon { font-size: 28px; }
+  .icon-circle {
+    width: 70px;
+    height: 70px;
+  }
+
+  .icon {
+    font-size: 28px;
+  }
 }
 
 
 .footer-bottom {
-  background: #A80101;          /* Same red theme */
+  background: #A80101;
+  /* Same red theme */
   color: #ffffff;
   text-align: center;
   padding: 12px 15px;
@@ -694,5 +1189,3 @@ body{
     line-height: 1.4;
   }
 }
-
-
